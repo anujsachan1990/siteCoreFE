@@ -1,0 +1,11 @@
+{
+  "name": "CQFE",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "modernizr": null,
+    "jquery": "1.11.1",
+    "handlebars": "~3.0.0",
+    "bootstrap-sass": "^3.3.6"
+  }
+}
