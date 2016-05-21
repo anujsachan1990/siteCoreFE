@@ -18,7 +18,7 @@ module.exports = function(grunt) {
         'handlebars:templates',
         'usemin',
         'styledown:dist',
-        'jsdoc:dist',
+        // 'jsdoc:dist',
         'copy:styleguide'
     ]);
 };

@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         'autoprefixer:tmp',
         'handlebars:templates',
         'styledown:tmp',
-        'jsdoc:tmp',
+        // 'jsdoc:tmp',
         'connect',
         'watch'
     ]);
