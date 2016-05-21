@@ -2,5 +2,5 @@
 node_modules
 ./dist
 .tmp
-source/js/bower
+app/js/bower
 .sass-cache

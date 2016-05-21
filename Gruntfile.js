@@ -11,10 +11,10 @@ module.exports = function(grunt) {
         loadConfig = require('load-grunt-config'),
         // Generic Grunt config object
         config = {
-            src: 'source',
-            src_bower: 'source/js/bower',
-            src_assets: 'source/assets',
-            src_modules: 'source/modules',
+            src: 'app',
+            src_bower: 'app/js/bower',
+            src_assets: 'app/assets',
+            src_modules: 'app/modules',
             dist: 'dist',
             dist_assets: 'dist/assets',
             delivery: 'delivery',
