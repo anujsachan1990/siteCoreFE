@@ -9,17 +9,17 @@
  * @date:       xxxx-xx-xx
  * @author:     name, name@sapient.com
  * @licensor:   SAPIENNITRO
- * @namespaces: snqs
+ * @namespaces: sunSpr
  */
 
-var snqs = window.snqs || {};
+var sunSpr = window.sunSpr || {};
 
 /**
  * @namespace SampleModule
- * @memberof snqs
+ * @memberof sunSpr
  * @property {null} property - description of property
  */
-snqs.SampleModule = (function (window, $, namespace) {
+sunSpr.SampleModule = (function (window, $, namespace) {
     'use strict';
 
     // public methods
@@ -34,21 +34,18 @@ snqs.SampleModule = (function (window, $, namespace) {
     /**
      * @method _privateMethod
      * @description Description of _privateMethod
-     * @memberof snqs.SampleModule
+     * @memberof sunSpr.SampleModule
      */
     _privateMethod = function () {
-
-       
-
         return property;
     };
 
     /**
      * @method init
      * @description Description of init
-     * @memberof snqs.SampleModule
+     * @memberof sunSpr.SampleModule
      * @example
-     * snqs.SampleModule.init()
+     * sunSpr.SampleModule.init()
      */
     init = function () {
         return _privateMethod();
@@ -59,6 +56,6 @@ snqs.SampleModule = (function (window, $, namespace) {
         init: init
     };
 
-}(this, jQuery, 'snqs'));
+}(this, jQuery, 'sunSpr'));
 
-jQuery(snqs.SampleModule.init());
+jQuery(sunSpr.SampleModule.init());
