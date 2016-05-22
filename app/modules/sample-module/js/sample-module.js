@@ -37,6 +37,9 @@ snqs.SampleModule = (function (window, $, namespace) {
      * @memberof snqs.SampleModule
      */
     _privateMethod = function () {
+
+       
+
         return property;
     };
 

@@ -17,22 +17,11 @@
  * <div class="sample-module sample-module--m01 "></div>
  * <div class="sample-module sample-module--m02"></div>
  */
+
 .sample-module {
-    width: 100px;
-    height: 50px;
-    background: #000;
-
    
-    &.sample-module--m01 {
-        background: #00ff00;
-
-    }
-
-    
-    &.sample-module--m02 {
-        background: #00ffff;
-    }
 }
+
 //------------------------------------- MEDIA ALL END
 
 //------------------------------------- MEDIA MOBILE @media @mobile Viewport S (Mobile General)
