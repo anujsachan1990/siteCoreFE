@@ -5,9 +5,9 @@
  * sample-module.js
  * [ Description of the sample module script ]
  *
- * @project:    SN-FE-QS
+ * @project:    SunSuper
  * @date:       xxxx-xx-xx
- * @author:     name, name@sapient.com
+ * @author:     Anuj Sachan, asachan@sapient.com
  * @licensor:   SAPIENNITRO
  * @namespaces: sunSpr
  */

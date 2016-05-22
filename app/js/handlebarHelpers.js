@@ -1,28 +1,25 @@
 /*jslint forin: true, sloppy: true, unparam: true, vars: true, white: true, nomen: true, plusplus:true */
-/*global window, document, jQuery, console, Modernizr */
+/*global window, document, jQuery, console */
 
 /*
  * sample-module.js
+ * [ Description of the sample module script ]
  *
  * @project:    SunSuper
- * @requires:   jQuery 1.11.1
  * @date:       xxxx-xx-xx
  * @author:     Anuj Sachan, asachan@sapient.com
  * @licensor:   SAPIENNITRO
  * @namespaces: sunSpr
  */
 
-/**
- * @namespace sunSpr
- */
 var sunSpr = window.sunSpr || {};
 
 /**
- * @namespace Global
+ * @namespace handlebarHelpers
  * @memberof sunSpr
  * @property {null} property - description of property
  */
-sunSpr.Global = (function (window, $, namespace) {
+sunSpr.handlebarHelpers = (function (window, $, namespace) {
     'use strict';
 
     // public methods
@@ -37,7 +34,7 @@ sunSpr.Global = (function (window, $, namespace) {
     /**
      * @method _privateMethod
      * @description Description of _privateMethod
-     * @memberof sunSpr.Global
+     * @memberof sunSpr.handlebarHelpers
      */
     _privateMethod = function () {
         return property;
@@ -46,9 +43,9 @@ sunSpr.Global = (function (window, $, namespace) {
     /**
      * @method init
      * @description Description of init
-     * @memberof sunSpr.Global
+     * @memberof sunSpr.handlebarHelpers
      * @example
-     * sunSpr.Global.init()
+     * sunSpr.handlebarHelpers.init()
      */
     init = function () {
         return _privateMethod();
@@ -61,4 +58,4 @@ sunSpr.Global = (function (window, $, namespace) {
 
 }(this, jQuery, 'sunSpr'));
 
-jQuery(sunSpr.Global.init());
+jQuery(sunSpr.handlebarHelpers.init());
