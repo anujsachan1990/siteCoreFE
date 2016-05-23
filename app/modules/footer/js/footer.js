@@ -15,12 +15,12 @@
 var sunSpr = window.sunSpr || {};
 
 /**
- * @namespace SampleModule
+ * @namespace Footer
  * @memberof sunSpr
  * @property {null} property - description of property
  */
  
-sunSpr.SampleModule = (function (window, $, namespace) {
+sunSpr.Footer = (function (window, $, namespace) {
     'use strict';
 
     // public methods
@@ -35,18 +35,20 @@ sunSpr.SampleModule = (function (window, $, namespace) {
     /**
      * @method _privateMethod
      * @description Description of _privateMethod
-     * @memberof sunSpr.SampleModule
+     * @memberof sunSpr.Footer
      */
     _privateMethod = function () {
+
+
         return property;
     };
 
     /**
      * @method init
      * @description Description of init
-     * @memberof sunSpr.SampleModule
+     * @memberof sunSpr.Footer
      * @example
-     * sunSpr.SampleModule.init()
+     * sunSpr.Footer.init()
      */
     init = function () {
         return _privateMethod();
@@ -59,4 +61,4 @@ sunSpr.SampleModule = (function (window, $, namespace) {
 
 }(this, jQuery, 'sunSpr'));
 
-jQuery(sunSpr.SampleModule.init());
+jQuery(sunSpr.Footer.init());
