@@ -1,0 +1,225 @@
+.panel--menu {
+	
+	.btn--close {
+		display:none !important;
+	}
+	
+	.content {
+		color:$white;
+		z-index:2;
+	}
+	
+	ul, ul li {
+		@include nolist();
+		width:100%;
+		text-align:center;
+	}
+	
+	ul.menu--top {
+		position:fixed;
+		left:-50%;
+		top:50%;
+		margin:-18rem 0 0 -40rem;
+		width:20rem;
+		font-weight:700;
+		
+		li {
+			margin:.3rem 0;
+			text-align:left;
+			
+			a {
+				text-transform:uppercase;
+				transition:all .4s;
+				font-weight:900;
+			}
+			
+			a:hover {
+				text-decoration:none;
+				padding:0 0 0 .5rem;
+			}
+			
+			a.active,
+			a.active:hover {
+				color:$orange;
+				padding:0;
+			}
+		}
+		
+		@include responsive-mobile {
+			position:relative;
+			left:0;
+			top:0;
+			margin:0 0 3rem 0;
+			width:100%;
+			float:left;
+			
+			li {
+				width:auto;
+				float:none;
+				display:inline-block;
+				margin:0 .5rem;
+				
+				a:hover {
+					padding:0;
+				}
+			}
+		}
+	}
+	
+	ul.menu--sub {
+		display:none;
+	}
+	
+	li.menu__category {
+		margin:2rem 0 0;
+		font-size:$font-size-standard;
+		font-weight:700;
+		text-transform:uppercase;
+		color:lighten($dark-grey, 30%);
+	}
+	
+	li.dreamproject {
+		margin:4rem 0 0;
+		
+		img {
+			width:14rem;
+			height:auto;
+		}
+	}
+	
+	a {
+		color:$white;
+		text-decoration:none;
+		transition:all .4s;
+		
+		&:hover {
+			text-decoration:underline;
+		}
+	}
+	
+	@include responsive-small-desktop-min {
+		ul.menu--employers,
+		ul.menu--advisers {
+			margin-top:20%;
+		}
+	}
+		
+}
+
+.panel--menu.menu-members-active {
+	
+	ul.menu--members {
+		display:block;
+	}
+	
+	&:after {
+		content:'Members';
+	}
+}
+
+.panel--menu.menu-employers-active {
+	
+	ul.menu--employers {
+		display:block;
+	}
+	
+	&:after {
+		content:'Employers';
+	}
+}
+
+.panel--menu.menu-advisers-active {
+	
+	ul.menu--advisers {
+		display:block;
+	}
+	
+	&:after {
+		content:'Advisers';
+	}
+}
+
+body.panel-menu-active {
+	
+	header .btn--menu {
+		z-index:5000;
+		
+		.patty, &:before, &:after {
+			background:none $white;
+		}
+		
+		.patty {
+			opacity:0;
+			width:.1rem;
+			left:50%;
+		}
+		
+		&:before {
+			transform:rotate(45deg);
+			top:1.3rem;
+		}
+		
+		&:after {
+			transform:rotate(-45deg);
+			bottom:1.4rem;
+		}
+		
+		.label {
+			opacity:0;
+			color:$white;
+			
+			&.label--close {
+				opacity:1;
+				margin-top:0;
+			}
+		}
+	}
+	
+	header .buttons {
+		z-index:5000;
+		
+		.btn {
+			color:$white;
+			
+			svg path, svg use {
+				fill:$white !important;
+			}
+		}
+		
+		.btn--profile {
+			background-image:url(../img/icons/chevron-down-white.svg);
+			
+			@include responsive-mobile {
+				background:none transparent;
+			}
+		}
+	}
+	
+	.stickybar .btn--contactus,
+	.stickybar .btn--chat {
+		z-index:5000;
+		
+		.label {
+			opacity:0;
+		}
+	}
+	
+	@include responsive-small-desktop-min {
+		footer {
+			position:fixed;
+			left:0;
+			bottom:0;
+			z-index:4900;
+			background:none transparent;
+		}
+	}
+	
+	.panel--menu ul.menu--top {
+		left:50%;
+		
+		@include responsive-mobile {
+			left:0;
+		}
+	}
+	
+}

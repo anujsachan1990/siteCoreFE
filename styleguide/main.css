@@ -508,4 +508,141 @@ body.half-inverted header .buttons .btn--search .icon {
 body.half-inverted header .buttons .btn--search:before, body.half-inverted header .buttons .btn--search:after {
   background: none #fff; }
 
+.panel--menu .btn--close {
+  display: none !important; }
+.panel--menu .content {
+  color: #fff;
+  z-index: 2; }
+.panel--menu ul, .panel--menu ul li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  text-align: center; }
+.panel--menu ul.menu--top {
+  position: fixed;
+  left: -50%;
+  top: 50%;
+  margin: -18rem 0 0 -40rem;
+  width: 20rem;
+  font-weight: 700; }
+  .panel--menu ul.menu--top li {
+    margin: .3rem 0;
+    text-align: left; }
+    .panel--menu ul.menu--top li a {
+      text-transform: uppercase;
+      transition: all .4s;
+      font-weight: 900; }
+    .panel--menu ul.menu--top li a:hover {
+      text-decoration: none;
+      padding: 0 0 0 .5rem; }
+    .panel--menu ul.menu--top li a.active,
+    .panel--menu ul.menu--top li a.active:hover {
+      color: #faa61a;
+      padding: 0; }
+  @media only screen and (max-width: 1000px) {
+    .panel--menu ul.menu--top {
+      position: relative;
+      left: 0;
+      top: 0;
+      margin: 0 0 3rem 0;
+      width: 100%;
+      float: left; }
+      .panel--menu ul.menu--top li {
+        width: auto;
+        float: none;
+        display: inline-block;
+        margin: 0 .5rem; }
+        .panel--menu ul.menu--top li a:hover {
+          padding: 0; } }
+.panel--menu ul.menu--sub {
+  display: none; }
+.panel--menu li.menu__category {
+  margin: 2rem 0 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #828282; }
+.panel--menu li.dreamproject {
+  margin: 4rem 0 0; }
+  .panel--menu li.dreamproject img {
+    width: 14rem;
+    height: auto; }
+.panel--menu a {
+  color: #fff;
+  text-decoration: none;
+  transition: all .4s; }
+  .panel--menu a:hover {
+    text-decoration: underline; }
+@media only screen and (min-width: 1001px) {
+  .panel--menu ul.menu--employers,
+  .panel--menu ul.menu--advisers {
+    margin-top: 20%; } }
+
+.panel--menu.menu-members-active ul.menu--members {
+  display: block; }
+.panel--menu.menu-members-active:after {
+  content: 'Members'; }
+
+.panel--menu.menu-employers-active ul.menu--employers {
+  display: block; }
+.panel--menu.menu-employers-active:after {
+  content: 'Employers'; }
+
+.panel--menu.menu-advisers-active ul.menu--advisers {
+  display: block; }
+.panel--menu.menu-advisers-active:after {
+  content: 'Advisers'; }
+
+body.panel-menu-active header .btn--menu {
+  z-index: 5000; }
+  body.panel-menu-active header .btn--menu .patty, body.panel-menu-active header .btn--menu:before, body.panel-menu-active header .btn--menu:after {
+    background: none #fff; }
+  body.panel-menu-active header .btn--menu .patty {
+    opacity: 0;
+    width: .1rem;
+    left: 50%; }
+  body.panel-menu-active header .btn--menu:before {
+    transform: rotate(45deg);
+    top: 1.3rem; }
+  body.panel-menu-active header .btn--menu:after {
+    transform: rotate(-45deg);
+    bottom: 1.4rem; }
+  body.panel-menu-active header .btn--menu .label {
+    opacity: 0;
+    color: #fff; }
+    body.panel-menu-active header .btn--menu .label.label--close {
+      opacity: 1;
+      margin-top: 0; }
+body.panel-menu-active header .buttons {
+  z-index: 5000; }
+  body.panel-menu-active header .buttons .btn {
+    color: #fff; }
+    body.panel-menu-active header .buttons .btn svg path, body.panel-menu-active header .buttons .btn svg use {
+      fill: #fff !important; }
+  body.panel-menu-active header .buttons .btn--profile {
+    background-image: url(../img/icons/chevron-down-white.svg); }
+    @media only screen and (max-width: 1000px) {
+      body.panel-menu-active header .buttons .btn--profile {
+        background: none transparent; } }
+body.panel-menu-active .stickybar .btn--contactus,
+body.panel-menu-active .stickybar .btn--chat {
+  z-index: 5000; }
+  body.panel-menu-active .stickybar .btn--contactus .label,
+  body.panel-menu-active .stickybar .btn--chat .label {
+    opacity: 0; }
+@media only screen and (min-width: 1001px) {
+  body.panel-menu-active footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 4900;
+    background: none transparent; } }
+body.panel-menu-active .panel--menu ul.menu--top {
+  left: 50%; }
+  @media only screen and (max-width: 1000px) {
+    body.panel-menu-active .panel--menu ul.menu--top {
+      left: 0; } }
+
 /*# sourceMappingURL=main.css.map */
