@@ -1,0 +1,159 @@
+/**
+ * Position an element centered within its parent
+ * Relative positioned version found on: http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+ **/
+ 
+@mixin vertical-center($position: relative, $height: 0) {
+	position: $position;
+	top: 50%;
+	@if $position == relative {
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	} @else {
+		margin-top:	( $height / 2 ) + px;
+	}
+}
+
+@mixin no-vertical-center($position: relative) {
+	position: relative;
+	top: 0;
+	@if $position == relative {
+		-webkit-transform: translateY(0%);
+		-ms-transform: translateY(0%);
+		transform: translateY(0%);
+	} @else {
+		margin-top:	0;
+	}
+}
+
+
+/**
+ * Mixin for px fallbacks if rem is not supported
+ * Mainly for IE9/10 support and older browsers
+ * + function for calculations
+ **/
+ 
+@mixin rem($property, $value){
+	$property: $value + px;
+	$property: ( 0.1 * $value ) + rem; /* We set the font size for the html tag, so rem should be 1/10 of pixel now! */ 
+}
+
+@function calcRem($value) {
+  @return ( 0.1 * $value ) + rem;
+}
+
+
+/**
+ * Mixin to include fonts via font face
+ **/
+ 
+@mixin font-face($name, $src, $weight, $style){
+	@font-face {
+		font-family:$name;
+		font-style:$style;
+		font-weight:$weight;
+		src:url($src) format('opentype');
+	}
+}
+
+
+/**
+ * Mixin for responsive style sections
+ **/
+ 
+@mixin responsive($width){
+	@include responsive-max($width){
+		@content;
+	}
+}
+
+@mixin responsive-min($min){
+	@media only screen and (min-width: $min) {
+		@content;
+	}
+}
+
+@mixin responsive-max($max){
+	@media only screen and (max-width: $max) {
+		@content;
+	}
+}
+
+@mixin responsive-min-max($min){
+	@media only screen and (min-width: $min) and (max-width: $max) {
+		@content;
+	}
+}
+
+
+/**
+ * Mixins to remove button/list/etc styles
+ */
+ 
+@mixin nobutton(){
+	margin:0;
+	padding:0;
+	border:0 none;
+	border-radius:0 none;
+	background:none transparent;
+}
+
+@mixin nolist(){
+	float:left;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+
+/**
+ * CSS3 properties xbrowser mixins
+ **/
+ 
+@mixin filter($filter){
+	-webkit-filter: $filter; /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: $filter; /* FF 35+ */
+}
+
+@mixin transform($transform){
+	-webkit-transform: $transform; /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+	-ms-transform: $transform; /* IE 9 */
+	transform: $transform; /* IE 10, Fx 16+, Op 12.1+ */
+}
+
+@mixin animation($name, $duration){
+	-webkit-animation: $name $duration; /* Chr, Saf */
+	animation: $name $duration; /* IE >9, Fx >15, Op >12.0 */
+}
+
+@mixin transition($transition) {
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-ms-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+
+@mixin opacity($opacity) {
+	filter: alpha(opactiy=($opacity * 100));
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity * 100})";
+	-moz-opacity: $opacity;
+	-khtml-opacity: $opacity;
+	opacity: $opacity;
+}
+
+@mixin placeholder {
+	::-webkit-input-placeholder {
+	   @content;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	   @content;
+	}
+	::-moz-placeholder {  /* Firefox 19+ */
+	   @content;
+	}
+	:-ms-input-placeholder {  
+	   @content;
+	}
+}

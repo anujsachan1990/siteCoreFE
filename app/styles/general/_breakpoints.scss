@@ -1,0 +1,34 @@
+$small-desktop: 1400px;
+$mobile: 1000px;
+
+$desktop-content-width: 120rem;
+$small-desktop-content-width: 90rem;
+
+
+/**
+ * Mixins for media queries
+ **/
+ 
+@mixin responsive-desktop-min {
+	@include responsive-min($small-desktop + 1px) {
+		@content;
+	}
+}
+ 
+@mixin responsive-small-desktop {
+	@include responsive-max($small-desktop) {
+		@content;
+	}
+}
+
+@mixin responsive-small-desktop-min {
+	@include responsive-min($mobile + 1px) {
+		@content;
+	}
+}
+
+@mixin responsive-mobile {
+	@include responsive-max($mobile) {
+		@content;
+	}
+}

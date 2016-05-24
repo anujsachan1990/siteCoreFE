@@ -1,3 +1,364 @@
-header{
+/* Fixed header elements */
+
+header {
+
+	.btn {
+		@include nobutton();
+		font-size:$font-size-small;
+	}
+
+	.btn--menu {
+		position:fixed;
+		z-index:1000;
+		top:3.6rem;
+		left:3rem;
+		width:3rem;
+		height:3rem;
+		
+		@include responsive-small-desktop {
+			top:2rem;
+			left:2rem;
+		}
+		
+		.patty, &:before, &:after {
+			width:3rem;
+			height:.3rem;
+			position:absolute;
+			left:0;
+			background:none $black;
+			transition:all .3s;
+		}
+		
+		.patty {
+			top:50%;
+			margin:-.1rem 0 0;
+		}
+		
+		&:before, &:after {
+			content:' ';
+		}
+			
+		&:before {
+			top:.8rem;
+		}
+		
+		&:after {
+			bottom:.7rem;
+		}
+		
+		.label {
+			position:absolute;
+			top:100%;
+			margin:-.3rem 0 0;
+			font-size:1rem;
+			font-weight:700;
+			width:100%;
+			left:0;
+			text-transform:uppercase;
+			transition:all .4s;
+			
+			&.label--close {
+				display:block !important;
+				opacity:0;
+			}
+		}
+		
+		&:hover {
+			
+			&:before, &:after {
+				left:.2rem;
+				width:2.6rem;
+			}		
+		}
+	}
 	
+	.logo {
+		position:fixed;
+		z-index:5000;
+		top:2.6rem;
+		left:10rem;
+		color:$orange;
+		
+		@include responsive-small-desktop {
+			top:1.8rem;
+			left:7rem;
+		}
+		
+		svg {
+			width:15.4rem;
+			height:4.5rem;
+			
+			path, use {
+				fill:$black;
+				transition:fill .4s;
+			}
+			
+			path.sun {
+				fill:$orange;
+				transition:fill .4s;
+			}
+		}
+	}
+	
+	.buttons {
+		position:fixed;
+		z-index:1000;
+		top:3.4rem;
+		right:3rem;
+		
+		@include responsive-small-desktop {
+			top:2.5rem;
+			right:2rem;
+		}
+		
+		.btn {
+			@include nobutton();
+			float:left;
+			margin:0 0 0 3rem;
+			height:3.8rem;
+			line-height:3.8rem;
+			position:relative;
+			transition:all .4s;
+			
+			@include responsive-mobile {
+				padding:0;
+				margin:0 0 0 2rem;
+			}
+			
+			.icon {
+				width:2.2rem;
+				height:2.2rem;
+				float:left;
+				position:relative;
+				margin:.5rem .4rem 0 0;
+				color:$black;
+				
+				@include responsive-mobile {
+					width:3rem;
+					height:3rem;
+					margin:0;
+				}
+				
+				path, use {
+					fill:$orange;
+					transition:fill .4s;
+				}
+			}
+			
+			.label {
+				text-transform:uppercase;
+				font-weight:700;
+				
+				@include responsive-mobile {
+					display:none;
+				}
+			}
+			
+			&:hover {
+				
+				.icon {
+				
+					path, use {
+						fill:$purple;
+					}
+				}
+			}
+			
+		}
+		
+		.btn--login {
+			
+			.icon {
+				margin:.6rem .6rem 0 0;
+			}
+		}
+		
+		.btn--profile {
+			padding:0 1.8rem 0 0;
+			background:url(../img/icons/chevron-down.svg) right top .9rem no-repeat transparent;
+			background-size:2rem 2rem;
+			transition:all .4s;
+			
+			@include responsive-mobile {
+				background:none transparent;
+			}
+			
+			&:hover {
+				background-position:right top 1.1rem;
+			}
+		}
+		
+		.btn--search {
+			padding:0 3.4rem 0 0;
+			
+			/*.icon {
+				float:right;
+				width:2.5rem;
+				height:2.5rem;
+				margin:.5rem 0 0 .6rem;
+				
+				path, use {
+					fill:$black;
+				}
+			}*/
+			
+			.icon {
+				position:absolute;
+				width:2rem;
+				height:2rem;
+				top:.4rem;
+				right:0;
+				border:.3rem solid $black;
+				border-radius:2.2rem;
+				transition:all .3s;
+				transform:rotate(45deg);
+			}
+			
+			&:before,
+			&:after {
+				content:' ';
+				position:absolute;
+				background:none $black;
+				transition:all .3s;
+			}
+			
+			&:before {
+				right:1.9rem;
+				bottom:.7rem;
+				width:.9rem;
+				transform:rotate(-45deg);
+				height:.3rem;
+			}
+			
+			&:after {
+				bottom:1.3rem;
+				right:1.3rem;
+				width:.3rem;
+				height:.3rem;
+				transform:rotate(45deg);
+				opacity:0;
+			}
+			
+			.label {
+				transition:all .4s;
+			}
+			
+			.label--close {
+				display:block !important;
+				opacity:0;
+				top:100%;
+				font-size:1rem;
+				font-weight:700;
+				text-transform:uppercase;
+				position:absolute;
+				right:-.5rem;
+				width:4rem;
+				text-align:center;
+				line-height:1.4;
+			}
+		}
+	}
+	
+	&:after {
+		position:fixed;
+		content:' ';
+		width:100%;
+		top:0;
+		left:0;
+		height:12rem;
+		z-index:1;
+		background:transparent; /* Old browsers */
+		background:-moz-linear-gradient(top, rgba(0,0,0,.5) 0%,rgba(255,255,255,0) 100%); /* FF3.6-15 */
+		background:-webkit-linear-gradient(top, rgba(0,0,0,.5) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background:linear-gradient(to bottom, rgba(0,0,0,.5) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		opacity:0;
+		transition:all .8;
+	}
+	
+	@include responsive-mobile {
+		position:fixed;
+		z-index:1000;
+		top:0;
+		left:0;
+		width:100%;
+		height:8rem;
+		
+		.btn--menu, .logo, .buttons {
+			position:absolute;
+		}
+	}
+}
+
+body.show-gradient header {
+	
+	&:after {
+		opacity:1;
+	}
+}
+
+@mixin buttons-inverted(){
+
+	.buttons {
+		
+		.btn {
+			color:$white;
+			
+			.icon path, .icon use {
+				fill:$white;
+			}
+		}
+		
+		.btn--profile {
+			background-image:url(../img/icons/chevron-down-white.svg);
+			@include responsive-mobile {
+				background:none transparent;
+			}
+		}
+		
+		.btn--search {
+			
+			.icon {
+				border-color:$white;
+			}
+			
+			&:before,
+			&:after {
+				background:none $white;
+			}
+		}
+	}
+	
+}
+
+@mixin header-inverted(){
+	
+	.btn--menu {
+		
+		.patty, &:before, &:after {
+			background:$white;
+		}
+		
+		.label {
+			color:$white;
+		}
+	}
+	
+	.logo {
+		color:$white;
+		
+		path, use, path.sun {
+			fill:$white;
+		}
+	}
+	
+	@include buttons-inverted();
+	
+}
+
+body.inverted header {
+	@include header-inverted();
+}
+
+body.half-inverted header {
+	@include buttons-inverted();
 }

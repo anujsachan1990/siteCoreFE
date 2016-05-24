@@ -1,0 +1,43 @@
+/**
+ * General button styles
+ **/
+ 
+.btn {
+	@include nobutton();
+	position:relative;
+}
+
+.btn--cta {
+	border:.5rem solid $orange;
+	border-radius:5.4rem;
+	line-height:4.4rem;
+	height:5.4rem;
+	padding:0 5.6rem 0 2rem;
+	font-size:$font-size-medium;
+	font-weight:700;
+	text-transform:uppercase;
+	transition:border .4s;
+	
+	&:after {
+		content:' ';
+		position:absolute;
+		right:.4rem;
+		top:.4rem;
+		height:3.6rem;
+		width:3.6rem;
+		border-radius:3.6rem;
+		background:url(../img/icons/arrow-right-white.svg) center center no-repeat $orange;
+		background-size:2rem 2rem;
+		transition:all .4s;
+	}
+	
+	&:hover {
+		border-color:$dark-orange;
+		
+		&:after {
+			background-color:$dark-orange;
+			background-size:2.4rem 2.4rem;
+		}
+	}
+		
+}

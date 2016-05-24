@@ -1,5 +1,22 @@
+/* General */
+
+@import 'general/_mixins';
+@import 'general/_fonts';
+@import 'general/_reset';
+@import 'general/_breakpoints';
+@import 'general/_colors';
+@import 'general/_buttons';
+
+
+/* Generic
+
 @import "generic/icons-svg.css";
 @import "bootstrap/bootstrap";
 @import "generic/variable";
+ */
+
+/* Component */
+
 @import "../modules/footer/sass/footer";
-@import "../modules/sample-module/sass/sample-module";
+@import "../modules/header/sass/header";
+

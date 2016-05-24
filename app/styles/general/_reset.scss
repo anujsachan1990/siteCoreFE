@@ -1,0 +1,49 @@
+/* Set box-sizing to be border-box by default */
+html {
+	font-size:62.5%; /* for easier rem calculations only! */
+}
+
+body {
+	margin:0;
+	padding:0;
+	width:100%;
+	float:left;
+	font-size:1.6rem;
+	font-weight:300;
+	line-height:1.4;
+	overflow-x:hidden;
+	-webkit-font-smoothing:antialiased;
+}
+
+body.noscroll {
+	overflow:hidden;
+}
+
+body, button, input, textarea {
+	font-family:'Museo Sans', Tahoma, Arial, sans-serif;
+}
+
+div, a, p, span, input, textarea, select, button, label, section, aside, header, footer, ul, ol, li, h1, h2, h3 {
+	box-sizing:border-box;
+}
+
+button, input, textarea {
+	font-size:100%;
+}
+
+button {
+	cursor:pointer;
+}
+
+button:focus, a:focus {
+	outline:none;
+}
+
+h1, h2, h3, b {
+	font-weight:700;
+}
+
+@include placeholder {
+	color:#000;
+	opacity:.5;
+}
