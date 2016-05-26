@@ -25,6 +25,7 @@
     "grunt-jsdoc": "^0.5.8",
     "grunt-karma": "0.10.1",
     "grunt-newer": "1.1.0",
+    "grunt-ssh-deploy": "^0.4.1",
     "grunt-styledown": "0.0.3",
     "grunt-svgmin": "2.0.1",
     "grunt-usemin": "3.0.0",
