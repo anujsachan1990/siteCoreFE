@@ -20,6 +20,7 @@
 /**
  * CSS3 properties xbrowser mixins
  **/
+/* font family */
 /* Import Museo Sans */
 @font-face {
   font-family: "Museo Sans";
@@ -128,6 +129,36 @@ body.neosans * {
 body.mixed h1, body.mixed h2, body.mixed h3 {
   font-family: 'Neo Sans' !important;
   font-weight: 500; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "Neo Sans";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Neo Sans";
+  font-weight: normal; }
+
+H1,
+h1 {
+  font-size: 9rem; }
+
+H2,
+h2 {
+  font-size: 5rem; }
+
+H3,
+h3 {
+  font-size: 2.4rem; }
 
 /* Set box-sizing to be border-box by default */
 html {
