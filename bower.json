@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "modernizr": null,
-    "jquery": "1.11.1",
+    "jquery": "2.2.4",
     "handlebars": "~3.0.0",
     "bootstrap-sass": "^3.3.6",
     "jquery-pubsub": "^1.1.2"
