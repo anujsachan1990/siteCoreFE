@@ -1,12 +1,11 @@
 {
   "name": "SiteCoreFE",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "private": true,
   "dependencies": {
     "modernizr": null,
     "jquery": "2.2.4",
     "handlebars": "~3.0.0",
-    "bootstrap-sass": "^3.3.6",
     "jquery-pubsub": "^1.1.2"
   }
 }

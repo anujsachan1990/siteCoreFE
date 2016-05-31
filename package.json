@@ -1,6 +1,6 @@
 {
   "name": "siteCoreFE",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "dependencies": {},
   "devDependencies": {
     "assemble": "0.4.42",
