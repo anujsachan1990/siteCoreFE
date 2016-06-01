@@ -5,7 +5,7 @@ module.exports = function(grunt) {
         'clean:dist',
         'assemble:dist',
         'useminPrepare',
-        'uglify:generated',
+        // 'uglify:generated',
         'copy:moduleimg',
         'copy:modulesvg',
         'svgmin',
