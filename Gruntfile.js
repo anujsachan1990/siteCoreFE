@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         // Generic Grunt config object
         config = {
             src: 'app',
-            src_bower: 'app/js/bower',
+            src_bowersrc_bower: 'app/js/bower',
             src_assets: 'app/assets',
             src_modules: 'app/modules',
             dist: 'dist',
@@ -20,7 +20,9 @@ module.exports = function(grunt) {
             delivery: 'delivery',
             tmp: '.tmp',
             test: 'test',
-            styleguide: 'styleguide'
+            styleguide: 'styleguide',
+            jsPath:'app/js',
+            MergeJsPath:'dist/js'
         };
 
     // Measure time of grunt tasks. Can help when optimizing build times

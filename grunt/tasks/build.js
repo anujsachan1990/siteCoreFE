@@ -14,12 +14,12 @@ module.exports = function(grunt) {
         'sass:styleguide',
         'autoprefixer:dist',
         'copy:dist',
-        'concat:concat',
         //'imagemin:dist',
         'handlebars:templates',
         'usemin',
         'styledown:dist',
         // 'jsdoc:dist',
-        'copy:styleguide'
+        'copy:styleguide',
+        'concat'
     ]);
 };
