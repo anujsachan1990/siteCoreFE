@@ -1,0 +1,51 @@
+<section id="join" class="section section--join section--invert section--cta section--background-dark-grey" data-background="dark-grey" rel="join">
+    <div class="inner">
+        <div class="content">
+            <h2 data-short-title="Join">{{this.heading}}</h2>
+            <div class="txt">
+                <p>{{this.description}}</p>
+                <button class="btn btn--cta btn--join" data-short-text="Join">{{this.joinLabel}}</button>
+            </div>
+            <div class="txt txt--callus">
+                <h3>{{this.callUslabel}}</h3>
+                <p>{{this.CallUsDescription}}</p>
+                <p class="phonenumber">
+                    <svg role="img" class="icon icon--call">
+                        <use xlink:href="#icn-call"></use>
+                    </svg>{{this.phoneNumber}}</p>
+                <ul class="links">
+                    <li><a href="#">{{this.requestCallLink}}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="txt txt--emailme">
+                <p>{{this.emailSummary}}</p>
+                <form name="emailme" action="#" method="get">
+                    <input type="email" class="input--text input--email" name="email" placeholder="Enter your email addess...">
+                    <button class="btn btn--submit btn--email">
+                        <svg role="img" class="icon icon--send">
+                            <use xlink:href="#icn-arrow-right"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{{#if moreSection}}
+<section id="more" class="section section--more section--invert section--background-dark-grey" data-background="dark-grey" rel="more">
+    <div class="inner">
+        <div class="content">
+        <h3>{{moreSection.heading}}</h3>
+        {{#each moreSection.results}}
+            <div class="col">
+                <h3>{{this.heading}}</h3>
+                <p>{{this.description}}</p>
+            </div>
+        {{/each}}
+        </div>
+    </div>
+</section>
+{{/if}}

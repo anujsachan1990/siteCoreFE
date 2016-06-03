@@ -1,0 +1,198 @@
+.wrap-sections .section--cta {
+  
+  .content {
+    width:100%;
+    text-align:center;
+    padding:0 20rem;
+    
+    @include responsive-mobile {
+      padding:0;
+    }
+    
+    h2 {
+      font-size:$font-size-huge;
+      color:$orange !important;
+      
+      @include responsive-mobile {
+        font-size:$font-size-large;
+      }
+    }
+    
+    .btn--cta {
+      width:33.6rem;
+      color:$white;
+    }
+    
+    .txt--callus, .txt--emailme {
+      margin:6rem 0 0;
+    }
+    
+    .txt--callus {
+      
+      h3, p{
+        margin:0;
+        padding:0;
+      }
+      
+      .phonenumber {
+        margin:1rem 0;
+        font-size:$font-size-large;
+        font-weight:700;
+        
+        svg {
+          height:3.7rem;
+          width:3.7rem;
+          margin:0 .4rem 0 0;
+          
+          path, use {
+            fill:$white;
+          }
+        }
+      }
+      
+      .links li a {
+        color:$orange;
+        
+        &:after {
+          background-image:url(../img/icons/arrow-right-orange.svg);
+        }
+      }
+    }
+    
+    .txt--emailme {
+      
+      p {
+        margin:1rem;
+        padding:0;
+      }
+      
+      form {
+        display:inline-block;
+        width:40rem;
+        position:relative;
+        
+        input {
+          width:100%;
+          float:left;
+          background:none $white;
+          border:.5rem solid $orange;
+          border-radius:5.4rem;
+          height:5.4rem;
+          line-height:4.4rem;
+          padding:0 1.5rem;
+        }
+        
+        button {
+          position:absolute;
+          right:.9rem;
+          top:.9rem;
+          height:3.6rem;
+          width:3.6rem;
+          border-radius:3.6rem;
+          background:url(../img/icons/arrow-right-white.svg) center center no-repeat $orange;
+          background-size:2rem 2rem;
+          transition:all .4s;
+          
+          &:hover {
+            background-color:$dark-orange;
+          }
+        }
+      }
+    }
+  }
+}
+
+body.home .wrap-sections .section--more {
+  height:auto;
+  min-height:0;
+  padding:5rem 0;
+  top:0;
+  transform:none;
+  
+  &:after {
+    content:' ';
+    position:absolute;
+    width:50%;
+    height:.3rem;
+    background:none $white;
+    top:3rem;
+    left:50%;
+    margin:0 0 0 -25%;
+    transition:all .4s;
+  }
+  
+  .content {
+    width:100%;
+    text-align:center;
+    
+    h3 {
+      margin:1rem 0;
+    }
+    
+    .col {
+      width:33.33%;
+      float:left;
+      font-size:$font-size-standard;
+      padding:0 4rem;
+      
+      h3 {
+        font-size:$font-size-medium;
+        color:$orange;
+        margin:.7rem 0;
+        padding:0 0 0 3rem;
+        background:url(../img/icons/arrow-right-orange.svg) left .2rem no-repeat transparent;
+        background-size:2.4rem 2.4rem;
+        cursor:pointer;
+        display:inline-block;
+        transition:all .4s;
+        
+        &:hover {
+          padding:0 0 0 3.4rem;
+          text-decoration:underline;
+        }
+      }
+      
+      @include responsive-mobile {
+        width:100%;
+      }
+    }
+  }
+  
+  .inner {
+    @include no-vertical-center();
+  }
+}
+
+@include responsive-mobile {
+  
+  .wrap-sections .section--more {
+    background:none $dark-grey;
+  }
+
+}
+
+@include responsive-small-desktop-min {
+  
+  body.fixedscroll .wrap-sections .section--more {
+    height:95rem;
+    min-height:70rem;
+    
+    &:after {
+      display:none;
+    }
+    
+    .inner {
+      @include vertical-center();
+      top:40%;
+    }
+    
+    .content {
+      
+      h3 {
+        font-size:$font-size-large;
+        margin:3rem 0;
+      }
+    }
+  }
+  
+}
