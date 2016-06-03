@@ -271,7 +271,7 @@ h1, h2, h3, b {
     height: 3.6rem;
     width: 3.6rem;
     border-radius: 3.6rem;
-    background: url(../img/icons/arrow-right-white.svg) center center no-repeat #faa61a;
+    background: url(../assets/images/svg/arrow-right-white.svg) center center no-repeat #faa61a;
     background-size: 2rem 2rem;
     transition: all .4s; }
   .btn--cta:hover {
@@ -1777,7 +1777,7 @@ body.fixedscroll .wrap-sections section.section--active.section--background-imag
   .wrap-sections .section--cta .content .txt--callus .links li a {
     color: #faa61a; }
     .wrap-sections .section--cta .content .txt--callus .links li a:after {
-      background-image: url(../img/icons/arrow-right-orange.svg); }
+      background-image: url(../assets/images/svg/arrow-right-orange.svg); }
   .wrap-sections .section--cta .content .txt--emailme p {
     margin: 1rem;
     padding: 0; }
@@ -1801,7 +1801,7 @@ body.fixedscroll .wrap-sections section.section--active.section--background-imag
       height: 3.6rem;
       width: 3.6rem;
       border-radius: 3.6rem;
-      background: url(../img/icons/arrow-right-white.svg) center center no-repeat #faa61a;
+      background: url(../assets/images/svg/arrow-right-white.svg) center center no-repeat #faa61a;
       background-size: 2rem 2rem;
       transition: all .4s; }
       .wrap-sections .section--cta .content .txt--emailme form button:hover {
@@ -1838,7 +1838,7 @@ body.home .wrap-sections .section--more {
         color: #faa61a;
         margin: .7rem 0;
         padding: 0 0 0 3rem;
-        background: url(../img/icons/arrow-right-orange.svg) left 0.2rem no-repeat transparent;
+        background: url(../assets/images/svg/arrow-right-orange.svg) left 0.2rem no-repeat transparent;
         background-size: 2.4rem 2.4rem;
         cursor: pointer;
         display: inline-block;
