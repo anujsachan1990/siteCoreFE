@@ -1,0 +1,11 @@
+{
+    "color": "purple",
+     "heading":"Considering Joining",
+     "imgPath": "assets/images/section-nonmember-melissa.jpg",
+    "author" : "Melissa",
+    "place":"New Farm, Brisbane",
+     "text":"<p>When you <b>join Sunsuper</b>, you get access to one of <b>Australia's largest and most awarded super funds</b>.</p>",
+     "textSmall" : "<p>As a profit-for-members fund, we're run to benefit our members. That means no commission, no shareholders and no over the top fees to pay.</p>",
+     "link":[{"href":"#","urlLabel":"Profit for members"},{"href":"#","urlLabel":"Compare Sunsuper"},{"href":"#","urlLabel":"Low fees"}]
+
+ }

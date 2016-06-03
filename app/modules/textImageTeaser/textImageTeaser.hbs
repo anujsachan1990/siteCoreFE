@@ -1,25 +1,33 @@
-<section id="nonmember" class="section section--nonmember section--background-purple section--invert" data-background="purple" rel="nonmember">
+<section id="nonmember" class="section section--nonmember section--background-{{this.color}} section--invert" data-background="{{this.color}}" rel="nonmember">
     <div class="inner">
         <div class="content">
-            <h2 data-short-title="Considering Joining">Considering Joining</h2>
+        {{#if this.heading}}
+            <h2 data-short-title="Considering Joining">{{this.heading}}</h2>
+        {{/if}}
+         {{#if this.text}}
             <div class="txt">
-                <p>When you <b>join Sunsuper</b>, you get access to one of <b>Australia's largest and most awarded super funds</b>.</p>
+                {{{this.text}}}
             </div>
+         {{/if}}
+         {{#if this.textSmall}}
             <div class="txt txt--small">
-                <p>As a profit-for-members fund, we're run to benefit our members. That means no commission, no shareholders and no over the top fees to pay.</p>
+                 {{{this.textSmall}}}
             </div>
+         {{/if}}
+            
             <ul class="links">
-                <li><a href="t5--profit-for-members.html">Profit for members</a></li>
-                <li><a href="#">Compare Sunsuper</a></li>
-                <li><a href="#">Low fees</a></li>
+            {{#each link}}
+                <li><a href="{{href}}" target="_self">{{urlLabel}}</a></li>
+            {{/each}}
             </ul>
+            
         </div>
     </div>
     <div class="graphic graphic--circle-element">
         <div class="graphic__inner">
             <div class="graphic__element">
-                <div class="image" style="background-image:url(img/backgrounds/section-nonmember-melissa.jpg);">
-                    <span class="caption"><b>Melissa</b><br>New Farm, Brisbane</span>
+                <div class="image" style="background-image:url({{this.imgPath}});">
+                    <span class="caption"><b>{{author}}</b><br>{{place}}</span>
                 </div>
             </div>
         </div>
