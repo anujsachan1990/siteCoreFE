@@ -281,7 +281,7 @@ h1, h2, h3, b {
       background-size: 2.4rem 2.4rem; }
 
 /* Generic
-
+@import 'general/global';
 @import "generic/icons-svg.css";
 @import "generic/variable";
  */

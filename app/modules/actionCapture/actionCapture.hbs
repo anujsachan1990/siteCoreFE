@@ -30,7 +30,8 @@
             <div class="txt txt--emailme">
                 <p>{{audienceComponent.emailSummary}}</p>
                 <form name="emailme" action="#" method="get">
-                    <input type="email" class="input--text input--email" name="email" placeholder="{{audienceComponent.placeholder}}">
+                <label for="email" class="sr-only">Email</label>
+                    <input type="email" class="input--text input--email" name="email" placeholder="{{audienceComponent.placeholder}}" id="email">
                     <button class="btn btn--submit btn--email">
                         <svg role="img" class="icon icon--send">
                             <use xlink:href="#icn-arrow-right"></use>
