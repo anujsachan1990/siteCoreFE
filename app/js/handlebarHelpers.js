@@ -49,6 +49,8 @@ sunSpr.handlebarHelpers = (function (window, $, namespace) {
      */
     init = function () {
         return _privateMethod();
+
+        
     };
 
     // Public API

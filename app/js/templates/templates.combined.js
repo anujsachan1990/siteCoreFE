@@ -1,9 +1,42 @@
 this["HBS"] = this["HBS"] || {};
 this["HBS"]["templates"] = this["HBS"]["templates"] || {};
 
-this["HBS"]["templates"]["actionCapture"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  return "<section id=\"join\" class=\"section section--join section--invert section--cta section--background-dark-grey\" data-background=\"dark-grey\" rel=\"join\">\n    <div class=\"inner\">\n\n        <div class=\"content\">\n            <h2 data-short-title=\"Join\">Join Now</h2>\n            <div class=\"txt\">\n                <p>If you're ready to join, you can open a Sunsuper account quickly and easily online in under 10 minutes.</p>\n                <button class=\"btn btn--cta btn--join\" data-short-text=\"Join\">Join in Minutes</button>\n            </div>\n            <div class=\"txt txt--callus\">\n                <h3>Or call us!</h3>\n                <p>We're here to help</p>\n                <p class=\"phonenumber\">\n                    <svg role=\"img\" class=\"icon icon--call\">\n                        <use xlink:href=\"#icn-call\"></use>\n                    </svg>13 11 84</p>\n                <ul class=\"links\">\n                    <li><a href=\"#\">Request a call back</a>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"txt txt--emailme\">\n                <p>Want to be emailed a summary?</p>\n                <form name=\"emailme\" action=\"#\" method=\"get\">\n                    <input type=\"email\" class=\"input--text input--email\" name=\"email\" placeholder=\"Enter your email addess...\">\n                    <button class=\"btn btn--submit btn--email\">\n                        <svg role=\"img\" class=\"icon icon--send\">\n                            <use xlink:href=\"#icn-arrow-right\"></use>\n                        </svg>\n                    </button>\n                </form>\n            </div>\n        </div>\n\n    </div>\n</section>\n\n<section id=\"more\" class=\"section section--more section--invert section--background-dark-grey\" data-background=\"dark-grey\" rel=\"more\">\n    <div class=\"inner\">\n        <div class=\"content\">\n            <h3>Or are you looking for something else?</h3>\n            <div class=\"col\">\n                <h3>Members</h3>\n                <p>At Sunsuper, our members are the centre of everything we do. It is this focus that has made us one of Australia's most awarded super funds.</p>\n            </div>\n            <div class=\"col\">\n                <h3>Employers</h3>\n                <p>Looking for a super solution for your employees? Wheather you want to pay for one employee or hundreds, Sunsuper makes managing your employees' super super easy.</p>\n            </div>\n            <div class=\"col\">\n                <h3>Advisers</h3>\n                <p>Partner with a super fund that is adviser friendly and easy to deal with - We are one of Australia's largest and fastest growing superannuation and retirement businesses.</p>\n            </div>\n        </div>\n    </div>\n</section>\n";
-  },"useData":true});
+this["HBS"]["templates"]["actionCapture"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
+  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression, buffer = "<section id=\"more\" class=\"section section--more section--invert section--background-dark-grey\" data-background=\"dark-grey\" rel=\"more\">\n    <div class=\"inner\">\n        <div class=\"content\">\n        <h3>"
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.moreSection : depth0)) != null ? stack1.heading : stack1), depth0))
+    + "</h3>\n";
+  stack1 = helpers.each.call(depth0, ((stack1 = (depth0 != null ? depth0.moreSection : depth0)) != null ? stack1.results : stack1), {"name":"each","hash":{},"fn":this.program(2, data),"inverse":this.noop,"data":data});
+  if (stack1 != null) { buffer += stack1; }
+  return buffer + "        </div>\n    </div>\n</section>\n";
+},"2":function(depth0,helpers,partials,data) {
+  var lambda=this.lambda, escapeExpression=this.escapeExpression;
+  return "            <div class=\"col\">\n                <h3>"
+    + escapeExpression(lambda((depth0 != null ? depth0.heading : depth0), depth0))
+    + "</h3>\n                <p>"
+    + escapeExpression(lambda((depth0 != null ? depth0.description : depth0), depth0))
+    + "</p>\n            </div>\n";
+},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression, buffer = "<section id=\"join\" class=\"section section--join section--invert section--cta section--background-dark-grey\" data-background=\"dark-grey\" rel=\"join\">\n    <div class=\"inner\">\n        <div class=\"content\">\n            <h2 data-short-title=\"Join\">"
+    + escapeExpression(lambda((depth0 != null ? depth0.heading : depth0), depth0))
+    + "</h2>\n            <div class=\"txt\">\n                <p>"
+    + escapeExpression(lambda((depth0 != null ? depth0.description : depth0), depth0))
+    + "</p>\n                <button class=\"btn btn--cta btn--join\" data-short-text=\"Join\">"
+    + escapeExpression(lambda((depth0 != null ? depth0.joinLabel : depth0), depth0))
+    + "</button>\n            </div>\n            <div class=\"txt txt--callus\">\n                <h3>"
+    + escapeExpression(lambda((depth0 != null ? depth0.callUslabel : depth0), depth0))
+    + "</h3>\n                <p>"
+    + escapeExpression(lambda((depth0 != null ? depth0.CallUsDescription : depth0), depth0))
+    + "</p>\n                <p class=\"phonenumber\">\n                    <svg role=\"img\" class=\"icon icon--call\">\n                        <use xlink:href=\"#icn-call\"></use>\n                    </svg>"
+    + escapeExpression(lambda((depth0 != null ? depth0.phoneNumber : depth0), depth0))
+    + "</p>\n                <ul class=\"links\">\n                    <li><a href=\"#\">"
+    + escapeExpression(lambda((depth0 != null ? depth0.requestCallLink : depth0), depth0))
+    + "</a>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"txt txt--emailme\">\n                <p>"
+    + escapeExpression(lambda((depth0 != null ? depth0.emailSummary : depth0), depth0))
+    + "</p>\n                <form name=\"emailme\" action=\"#\" method=\"get\">\n                    <input type=\"email\" class=\"input--text input--email\" name=\"email\" placeholder=\"Enter your email addess...\">\n                    <button class=\"btn btn--submit btn--email\">\n                        <svg role=\"img\" class=\"icon icon--send\">\n                            <use xlink:href=\"#icn-arrow-right\"></use>\n                        </svg>\n                    </button>\n                </form>\n            </div>\n        </div>\n\n    </div>\n</section>\n\n\n";
+  stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.moreSection : depth0), {"name":"if","hash":{},"fn":this.program(1, data),"inverse":this.noop,"data":data});
+  if (stack1 != null) { buffer += stack1; }
+  return buffer;
+},"useData":true});
 
 this["HBS"]["templates"]["footer"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   return "<footer>\n\n   here we go\n\n</footer>\n";
