@@ -281,7 +281,6 @@ h1, h2, h3, b {
       background-size: 2.4rem 2.4rem; }
 
 /* Generic
-@import 'general/global';
 @import "generic/icons-svg.css";
 @import "generic/variable";
  */
@@ -1747,6 +1746,16 @@ body.fixedscroll .wrap-sections section.section--active .graphic--circle-element
     transform: rotate(-45deg); }
 body.fixedscroll .wrap-sections section.section--active.section--background-image--2 .content, body.fixedscroll .wrap-sections section.section--active.section--background-image--2:after {
   opacity: 1; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
 
 .wrap-sections .section--cta .content {
   width: 100%;
