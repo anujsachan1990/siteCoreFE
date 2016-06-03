@@ -2,13 +2,39 @@ this["HBS"] = this["HBS"] || {};
 this["HBS"]["templates"] = this["HBS"]["templates"] || {};
 
 this["HBS"]["templates"]["actionCapture"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
-  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression, buffer = "<section id=\"more\" class=\"section section--more section--invert section--background-dark-grey\" data-background=\"dark-grey\" rel=\"more\">\n    <div class=\"inner\">\n        <div class=\"content\">\n        <h3>"
-    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.moreSection : depth0)) != null ? stack1.heading : stack1), depth0))
-    + "</h3>\n";
-  stack1 = helpers.each.call(depth0, ((stack1 = (depth0 != null ? depth0.moreSection : depth0)) != null ? stack1.results : stack1), {"name":"each","hash":{},"fn":this.program(2, data),"inverse":this.noop,"data":data});
+  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression, buffer = "    <!-- action components starts here -->\n<section id=\"join\" class=\"section section--join section--invert section--cta section--background-dark-grey\" data-background=\"dark-grey\" rel=\"join\">\n    <div class=\"inner\">\n        <div class=\"content\">\n       \n         <div class=\"action\">\n            <h2 data-short-title=\"Join\">"
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.actionComponent : depth0)) != null ? stack1.heading : stack1), depth0))
+    + "</h2>\n            <div class=\"txt\">\n                <p>"
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.actionComponent : depth0)) != null ? stack1.description : stack1), depth0))
+    + "</p>\n                <button class=\"btn btn--cta btn--join\" data-short-text=\"Join\">"
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.actionComponent : depth0)) != null ? stack1.joinLabel : stack1), depth0))
+    + "</button>\n            </div>\n        </div>\n        \n";
+  stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.audienceComponent : depth0), {"name":"if","hash":{},"fn":this.program(2, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
-  return buffer + "        </div>\n    </div>\n</section>\n";
+  return buffer + "        </div>\n\n    </div>\n</section>\n <!-- action components Ends here -->\n";
 },"2":function(depth0,helpers,partials,data) {
+  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression;
+  return "         <!-- Capture components Ends here -->\n        <div class=\"Capture\">\n            <div class=\"txt txt--callus\">\n                <h3>"
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.audienceComponent : depth0)) != null ? stack1.callUslabel : stack1), depth0))
+    + "</h3>\n                <p>"
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.audienceComponent : depth0)) != null ? stack1.callUsDescription : stack1), depth0))
+    + "</p>\n                <p class=\"phonenumber\">\n                    <svg role=\"img\" class=\"icon icon--call\">\n                        <use xlink:href=\"#icn-call\"></use>\n                    </svg>"
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.audienceComponent : depth0)) != null ? stack1.phoneNumber : stack1), depth0))
+    + "</p>\n                <ul class=\"links\">\n                    <li><a href=\"#\">"
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.audienceComponent : depth0)) != null ? stack1.requestCallLink : stack1), depth0))
+    + "</a>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"txt txt--emailme\">\n                <p>"
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.audienceComponent : depth0)) != null ? stack1.emailSummary : stack1), depth0))
+    + "</p>\n                <form name=\"emailme\" action=\"#\" method=\"get\">\n                    <input type=\"email\" class=\"input--text input--email\" name=\"email\" placeholder=\""
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.audienceComponent : depth0)) != null ? stack1.placeholder : stack1), depth0))
+    + "\">\n                    <button class=\"btn btn--submit btn--email\">\n                        <svg role=\"img\" class=\"icon icon--send\">\n                            <use xlink:href=\"#icn-arrow-right\"></use>\n                        </svg>\n                    </button>\n                </form>\n            </div>\n        </div>\n        <!-- Capture components Ends here -->\n";
+},"4":function(depth0,helpers,partials,data) {
+  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression, buffer = "<!-- Fallback components Ends here -->\n<section id=\"more\" class=\"section section--more section--invert section--background-dark-grey\" data-background=\"dark-grey\" rel=\"more\">\n    <div class=\"inner\">\n        <div class=\"content\">\n        <h3>"
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.captureComponent : depth0)) != null ? stack1.heading : stack1), depth0))
+    + "</h3>\n";
+  stack1 = helpers.each.call(depth0, ((stack1 = (depth0 != null ? depth0.captureComponent : depth0)) != null ? stack1.results : stack1), {"name":"each","hash":{},"fn":this.program(5, data),"inverse":this.noop,"data":data});
+  if (stack1 != null) { buffer += stack1; }
+  return buffer + "        </div>\n    </div>\n</section>\n<!-- Fallback components Ends here -->\n";
+},"5":function(depth0,helpers,partials,data) {
   var lambda=this.lambda, escapeExpression=this.escapeExpression;
   return "            <div class=\"col\">\n                <h3>"
     + escapeExpression(lambda((depth0 != null ? depth0.heading : depth0), depth0))
@@ -16,26 +42,13 @@ this["HBS"]["templates"]["actionCapture"] = Handlebars.template({"1":function(de
     + escapeExpression(lambda((depth0 != null ? depth0.description : depth0), depth0))
     + "</p>\n            </div>\n";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression, buffer = "<section id=\"join\" class=\"section section--join section--invert section--cta section--background-dark-grey\" data-background=\"dark-grey\" rel=\"join\">\n    <div class=\"inner\">\n        <div class=\"content\">\n            <h2 data-short-title=\"Join\">"
-    + escapeExpression(lambda((depth0 != null ? depth0.heading : depth0), depth0))
-    + "</h2>\n            <div class=\"txt\">\n                <p>"
-    + escapeExpression(lambda((depth0 != null ? depth0.description : depth0), depth0))
-    + "</p>\n                <button class=\"btn btn--cta btn--join\" data-short-text=\"Join\">"
-    + escapeExpression(lambda((depth0 != null ? depth0.joinLabel : depth0), depth0))
-    + "</button>\n            </div>\n            <div class=\"txt txt--callus\">\n                <h3>"
-    + escapeExpression(lambda((depth0 != null ? depth0.callUslabel : depth0), depth0))
-    + "</h3>\n                <p>"
-    + escapeExpression(lambda((depth0 != null ? depth0.CallUsDescription : depth0), depth0))
-    + "</p>\n                <p class=\"phonenumber\">\n                    <svg role=\"img\" class=\"icon icon--call\">\n                        <use xlink:href=\"#icn-call\"></use>\n                    </svg>"
-    + escapeExpression(lambda((depth0 != null ? depth0.phoneNumber : depth0), depth0))
-    + "</p>\n                <ul class=\"links\">\n                    <li><a href=\"#\">"
-    + escapeExpression(lambda((depth0 != null ? depth0.requestCallLink : depth0), depth0))
-    + "</a>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"txt txt--emailme\">\n                <p>"
-    + escapeExpression(lambda((depth0 != null ? depth0.emailSummary : depth0), depth0))
-    + "</p>\n                <form name=\"emailme\" action=\"#\" method=\"get\">\n                    <input type=\"email\" class=\"input--text input--email\" name=\"email\" placeholder=\"Enter your email addess...\">\n                    <button class=\"btn btn--submit btn--email\">\n                        <svg role=\"img\" class=\"icon icon--send\">\n                            <use xlink:href=\"#icn-arrow-right\"></use>\n                        </svg>\n                    </button>\n                </form>\n            </div>\n        </div>\n\n    </div>\n</section>\n\n\n";
-  stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.moreSection : depth0), {"name":"if","hash":{},"fn":this.program(1, data),"inverse":this.noop,"data":data});
+  var stack1, buffer = "";
+  stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.actionComponent : depth0), {"name":"if","hash":{},"fn":this.program(1, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
-  return buffer;
+  buffer += "\n";
+  stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.captureComponent : depth0), {"name":"if","hash":{},"fn":this.program(4, data),"inverse":this.noop,"data":data});
+  if (stack1 != null) { buffer += stack1; }
+  return buffer + "\n";
 },"useData":true});
 
 this["HBS"]["templates"]["footer"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
