@@ -1,7 +1,7 @@
 /*jslint forin: true, sloppy: true, unparam: true, vars: true, white: true, nomen: true, plusplus:true */
 /*global window, document, jQuery, console */
 /*
- * sample-module.js
+ * textImageCarousel.js
  * [ Description of the sample module script ]
  *
  * @project:    SunSuper
