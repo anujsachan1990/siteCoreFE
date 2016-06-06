@@ -1,6 +1,5 @@
 /*jslint forin: true, sloppy: true, unparam: true, vars: true, white: true, nomen: true, plusplus:true */
 /*global window, document, jQuery, console */
-
 /*
  * sample-module.js
  * [ Description of the sample module script ]
@@ -11,7 +10,6 @@
  * @licensor:   SAPIENNITRO
  * @namespaces: sunSpr
  */
-
 var sunSpr = window.sunSpr || {};
 
 /**
@@ -19,94 +17,97 @@ var sunSpr = window.sunSpr || {};
  * @memberof sunSpr
  * @property {null} property - description of property
  */
- 
-sunSpr.textImageCarousel = (function (window, $, namespace) {
+
+sunSpr.textImageCarousel = (function(window, $, namespace) {
     'use strict';
 
     // public methods
     var init,
 
-    // private methods
+        // private methods
         _privateMethod,
 
-    // properties
+        // properties
         property = null,
-        interval = null,
-        oldtop = $('.section--services .box--top'),
-        oldright = $('.section--services .box--right'),
-        oldbottom = $('.section--services .box--bottom'),
-        oldleft = $('.section--services .box--left');
+        interval = null;
 
     /**
      * @method _privateMethod
      * @description Description of _privateMethod
      * @memberof sunSpr.textImageCarousel
      */
-    _privateMethod = function () {
-        return property;
-    };
-    
-    function startSlider(){
-        
-        interval = setInterval( function(){
-        
+   
+    function startSlider() {
+        interval = setInterval(function() {
             slideLeft();
-            
         }, 3000);
-        
     }
-    
-    function stopSlider(){
-        
-        clearInterval( interval );
-        
+
+    function stopSlider() {
+        clearInterval(interval);
     }
-    
-    startSlider();
-    
-    $('body').on('mouseover', '.section--services .boxes', function(){
+
+    function attachEvents(){
+
+    $('body').on('mouseover', '.section--services .boxes', function() {
+            stopSlider();
+        }).on('mouseout', '.section--services .boxes', function() {
+            startSlider();
+        });
+
+    $('body').on('click', '.section--services .box', function() {
         stopSlider();
-    }).on('mouseout', '.section--services .boxes', function(){
-        startSlider();
-    });
-    
-    $('body').on('click', '.section--services .box', function(){
-        stopSlider();
-        if( $(this).hasClass('box--top') ){
+        if ($(this).hasClass('box--top')) {
             slideRight();
-        } else if( $(this).hasClass('box--right') ){
+        } else if ($(this).hasClass('box--right')) {
             slideCross();
-        } else if( $(this).hasClass('box--bottom') ){
+        } else if ($(this).hasClass('box--bottom')) {
             slideLeft();
         }
     });
-    
-    function slideLeft(){
-        
+
+    } 
+
+    function slideLeft() {
+        var oldtop = $('.section--services .box--top');
+        var oldright = $('.section--services .box--right');
+        var oldbottom = $('.section--services .box--bottom');
+        var oldleft = $('.section--services .box--left');
+
         oldtop.removeClass('box--top').addClass('box--right');
         oldright.removeClass('box--right').addClass('box--bottom');
         oldbottom.removeClass('box--bottom').addClass('box--left');
         oldleft.removeClass('box--left').addClass('box--top');
-            
     }
-    
-    function slideRight(){
-        
+
+    function slideRight() {
+
+        var oldtop = $('.section--services .box--top');
+        var oldright = $('.section--services .box--right');
+        var oldbottom = $('.section--services .box--bottom');
+        var oldleft = $('.section--services .box--left');
+
         oldtop.removeClass('box--top').addClass('box--left');
         oldleft.removeClass('box--left').addClass('box--bottom');
         oldbottom.removeClass('box--bottom').addClass('box--right');
         oldright.removeClass('box--right').addClass('box--top');
-            
+
     }
-    
-    function slideCross(){
-        
+
+    function slideCross() {
+
+        var oldtop = $('.section--services .box--top');
+        var oldright = $('.section--services .box--right');
+        var oldbottom = $('.section--services .box--bottom');
+        var oldleft = $('.section--services .box--left');
+
         oldtop.removeClass('box--top').addClass('box--bottom');
         oldleft.removeClass('box--left').addClass('box--right');
         oldbottom.removeClass('box--bottom').addClass('box--top');
         oldright.removeClass('box--right').addClass('box--left');
-            
+
     }
+
     /**
      * @method init
      * @description Description of init
@@ -114,8 +115,11 @@ sunSpr.textImageCarousel = (function (window, $, namespace) {
      * @example
      * sunSpr.textImageCarousel.init()
      */
-    init = function () {
-        return _privateMethod();
+    init = function() {
+
+        startSlider();
+        attachEvents();
+
     };
 
     // Public API
