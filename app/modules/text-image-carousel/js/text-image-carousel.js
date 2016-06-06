@@ -31,7 +31,11 @@ sunSpr.textImageCarousel = (function (window, $, namespace) {
 
     // properties
         property = null,
-        interval = null;
+        interval = null,
+        oldtop = $('.section--services .box--top'),
+        oldright = $('.section--services .box--right'),
+        oldbottom = $('.section--services .box--bottom'),
+        oldleft = $('.section--services .box--left');
 
     /**
      * @method _privateMethod
@@ -41,7 +45,6 @@ sunSpr.textImageCarousel = (function (window, $, namespace) {
     _privateMethod = function () {
         return property;
     };
-    var interval = null;
     
     function startSlider(){
         
@@ -80,11 +83,6 @@ sunSpr.textImageCarousel = (function (window, $, namespace) {
     
     function slideLeft(){
         
-        var oldtop = $('.section--services .box--top');
-        var oldright = $('.section--services .box--right');
-        var oldbottom = $('.section--services .box--bottom');
-        var oldleft = $('.section--services .box--left');
-        
         oldtop.removeClass('box--top').addClass('box--right');
         oldright.removeClass('box--right').addClass('box--bottom');
         oldbottom.removeClass('box--bottom').addClass('box--left');
@@ -94,11 +92,6 @@ sunSpr.textImageCarousel = (function (window, $, namespace) {
     
     function slideRight(){
         
-        var oldtop = $('.section--services .box--top');
-        var oldright = $('.section--services .box--right');
-        var oldbottom = $('.section--services .box--bottom');
-        var oldleft = $('.section--services .box--left');
-        
         oldtop.removeClass('box--top').addClass('box--left');
         oldleft.removeClass('box--left').addClass('box--bottom');
         oldbottom.removeClass('box--bottom').addClass('box--right');
@@ -107,11 +100,6 @@ sunSpr.textImageCarousel = (function (window, $, namespace) {
     }
     
     function slideCross(){
-        
-        var oldtop = $('.section--services .box--top');
-        var oldright = $('.section--services .box--right');
-        var oldbottom = $('.section--services .box--bottom');
-        var oldleft = $('.section--services .box--left');
         
         oldtop.removeClass('box--top').addClass('box--bottom');
         oldleft.removeClass('box--left').addClass('box--right');

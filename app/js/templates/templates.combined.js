@@ -131,13 +131,13 @@ this["HBS"]["templates"]["text-image-carousel"] = Handlebars.template({"1":funct
   if (stack1 != null) { buffer += stack1; }
   stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.textSmall : depth0), {"name":"if","hash":{},"fn":this.program(5, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
-  buffer += "            \n            <ul class=\"links\">\n";
+  buffer += "            <ul class=\"links\">\n";
   stack1 = helpers.each.call(depth0, (depth0 != null ? depth0.link : depth0), {"name":"each","hash":{},"fn":this.program(7, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
-  buffer += "            </ul>\n            \n        </div>\n    </div>\n\n    <div class=\"graphic\">\n        <div class=\"boxes\">\n";
+  buffer += "            </ul>\n        </div>\n    </div>\n\n    <div class=\"graphic\">\n        <div class=\"boxes\">\n";
   stack1 = helpers.each.call(depth0, (depth0 != null ? depth0.boxes : depth0), {"name":"each","hash":{},"fn":this.program(9, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
-  return buffer + "        \n        </div>\n    </div>\n</section>\n";
+  return buffer + "        </div>\n    </div>\n</section>\n";
 },"useData":true});
 
 this["HBS"]["templates"]["textImageTeaser"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {

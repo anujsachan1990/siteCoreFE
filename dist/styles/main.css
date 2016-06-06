@@ -393,7 +393,7 @@ h1, h2, h3, b {
     .wrap-sections section.section--invert .links li a {
       color: #fff; }
       .wrap-sections section.section--invert .links li a:after {
-        background-image: url(../img/icons/arrow-right-white.svg); }
+        background-image: url(../assets/images/svg/arrow-right-white.svg); }
   .wrap-sections section.section--background-blue {
     background-color: #007bba; }
   .wrap-sections section.section--background-purple {
@@ -1497,3 +1497,150 @@ body.home .wrap-sections .section--more {
     body.fixedscroll .wrap-sections .section--more .content h3 {
       font-size: 5rem;
       margin: 3rem 0; } }
+.wrap-sections .section--services {
+  z-index: 200; }
+  .wrap-sections .section--services .content {
+    width: 40%; }
+    @media only screen and (max-width: 1000px) {
+      .wrap-sections .section--services .content {
+        width: 100%; } }
+  .wrap-sections .section--services .graphic {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60rem;
+    height: 65rem;
+    margin: -32.5rem 0 0;
+    transition: all .4s;
+    padding: 0;
+    z-index: 200; }
+    @media only screen and (max-width: 1000px) {
+      .wrap-sections .section--services .graphic {
+        display: none; } }
+    .wrap-sections .section--services .graphic .boxes {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      .wrap-sections .section--services .graphic .boxes .box {
+        width: 26rem;
+        height: 26rem;
+        border-radius: 40rem;
+        border: 0.3rem solid #fff;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: none center center no-repeat transparent;
+        background-size: cover;
+        overflow: hidden;
+        transition: all .6s;
+        cursor: pointer; }
+        .wrap-sections .section--services .graphic .boxes .box .caption {
+          position: absolute;
+          text-align: center;
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          padding: 2.5rem 10rem 1.5rem;
+          font-size: 1.3rem;
+          text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+          /* FF3.6-15 */
+          /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          transition: opacity 1s; }
+          .wrap-sections .section--services .graphic .boxes .box .caption a {
+            color: #fff;
+            font-weight: 900;
+            text-decoration: none; }
+            .wrap-sections .section--services .graphic .boxes .box .caption a:hover {
+              text-decoration: underline; }
+        .wrap-sections .section--services .graphic .boxes .box .caption--long {
+          opacity: 0;
+          padding: 3rem 13rem 2rem;
+          font-size: 1.6rem;
+          width: 44rem;
+          left: 50%;
+          margin-left: -22rem; }
+      .wrap-sections .section--services .graphic .boxes .box--top {
+        left: 100%;
+        top: -2rem;
+        margin: 0 0 0 -33rem; }
+      .wrap-sections .section--services .graphic .boxes .box--left {
+        left: -6rem;
+        top: 50%;
+        margin: -22rem 0 0 0;
+        width: 44rem;
+        height: 44rem;
+        z-index: 2; }
+        .wrap-sections .section--services .graphic .boxes .box--left .caption--long {
+          opacity: 1; }
+        .wrap-sections .section--services .graphic .boxes .box--left .caption--short {
+          opacity: 0; }
+      .wrap-sections .section--services .graphic .boxes .box--right {
+        left: 100%;
+        top: 50%;
+        margin: -13rem 0 0 -20rem; }
+      .wrap-sections .section--services .graphic .boxes .box--bottom {
+        top: 100%;
+        left: 100%;
+        margin: -25rem 0 0 -33rem; }
+      .wrap-sections .section--services .graphic .boxes .box--adam {
+        background-image: url(../assets/images/section-services-adam-30s.jpg); }
+      .wrap-sections .section--services .graphic .boxes .box--anna {
+        background-image: url(../assets/images/section-services-anna-30s.jpg); }
+      .wrap-sections .section--services .graphic .boxes .box--john {
+        background-image: url(../assets/images/section-services-john-30s.jpg); }
+      .wrap-sections .section--services .graphic .boxes .box--jane {
+        background-image: url(../assets/images/section-services-jane-30s.jpg); }
+      .wrap-sections .section--services .graphic .boxes .box--brad {
+        background-image: url(../assets/images/section-services-brad-30s.jpg); }
+      @media only screen and (max-width: 1400px) {
+        .wrap-sections .section--services .graphic .boxes .box {
+          width: 23rem;
+          height: 23rem; }
+          .wrap-sections .section--services .graphic .boxes .box .caption {
+            padding: 2.5rem 8rem 1.5rem; }
+          .wrap-sections .section--services .graphic .boxes .box .caption--long {
+            width: 40rem;
+            margin-left: -20rem;
+            padding: 3rem 11rem 2rem; }
+        .wrap-sections .section--services .graphic .boxes .box--left {
+          width: 40rem;
+          height: 40rem;
+          margin-top: -20rem; }
+        .wrap-sections .section--services .graphic .boxes .box--right {
+          margin-top: -11.5rem; }
+        .wrap-sections .section--services .graphic .boxes .box--top {
+          top: 4rem; }
+        .wrap-sections .section--services .graphic .boxes .box--bottom {
+          margin-top: -27rem; } }
+  @media only screen and (max-width: 1000px) {
+    .wrap-sections .section--services:after {
+      content: ' ';
+      width: 90rem;
+      height: 90rem;
+      position: absolute;
+      top: -81rem;
+      left: 50%;
+      margin-left: -27rem;
+      background: url(../img/backgrounds/section-profit-for-members-rectangle-empty.png) center center no-repeat transparent;
+      background-size: cover;
+      opacity: .2; } }
+
+@media only screen and (min-width: 1001px) {
+  body.fixedscroll .wrap-sections .section--services .graphic {
+    opacity: 0;
+    left: 70%; }
+    body.fixedscroll .wrap-sections .section--services .graphic .boxes .box--top, body.fixedscroll .wrap-sections .section--services .graphic .boxes .box--bottom {
+      margin-right: -20rem; }
+    body.fixedscroll .wrap-sections .section--services .graphic .boxes .box--right {
+      margin-right: -50rem; }
+
+  body.fixedscroll.section-services-active .wrap-sections .section--services .graphic {
+    opacity: 1;
+    left: 50%; }
+    body.fixedscroll.section-services-active .wrap-sections .section--services .graphic .boxes .box--top, body.fixedscroll.section-services-active .wrap-sections .section--services .graphic .boxes .box--bottom, body.fixedscroll.section-services-active .wrap-sections .section--services .graphic .boxes .box--right {
+      margin-right: 0; } }
