@@ -1,0 +1,223 @@
+.wrap-sections .section--services {
+	z-index:200;
+	
+	.content {
+		width:40%;
+		
+		@include responsive-mobile {
+			width:100%;
+		}
+	}
+	
+	.graphic {
+		position:absolute;
+		left:50%;
+		top:50%;
+		width:$desktop-content-width / 2;
+		height:65rem;
+		margin:-32.5rem 0 0;
+		transition:all .4s;
+		padding:0;
+		z-index:200;
+		
+		@include responsive-mobile {
+			display:none;
+		}
+		
+		.boxes {
+			width:100%;
+			height:100%;
+			position:absolute;
+			top:0;
+			left:0;
+			
+			.box {
+				width:26rem;
+				height:26rem;
+				border-radius:40rem;
+				border:.3rem solid $white;
+				position:absolute;
+				z-index:1;
+				top:0;
+				left:0;
+				background:none center center no-repeat transparent;
+				background-size:cover;
+				overflow:hidden;
+				transition:all .6s;
+				cursor:pointer;
+				
+				.caption {
+					position:absolute;
+					text-align:center;
+					width:100%;
+					left:0;
+					bottom:0;
+					padding:2.5rem 10rem 1.5rem;
+					font-size:$font-size-small;
+					text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+					background:-moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,.7) 100%); /* FF3.6-15 */
+					background:-webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,.7) 100%); /* Chrome10-25,Safari5.1-6 */
+					background:linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					transition:opacity 1s;
+					
+					a {
+						color:$white;
+						font-weight:900;
+						text-decoration:none;
+						
+						&:hover {
+							text-decoration:underline;
+						}
+					}
+				}
+				
+				.caption--long {
+					opacity:0;
+					padding:3rem 13rem 2rem;
+					font-size:$font-size-standard;
+					width:44rem;
+					left:50%;
+					margin-left:-22rem;
+				}
+			}
+			
+			.box--top {
+				left:100%;
+				top:-2rem;
+				margin:0 0 0 -33rem;
+			}
+			
+			.box--left {
+				left:-6rem;
+				top:50%;
+				margin:-22rem 0 0 0;
+				width:44rem;
+				height:44rem;
+				z-index:2;
+				
+				.caption--long {
+					opacity:1;
+				}
+				
+				.caption--short {
+					opacity:0;
+				}
+			}
+			
+			.box--right {
+				left:100%;
+				top:50%;
+				margin:-13rem 0 0 -20rem;
+			}
+			
+			.box--bottom {
+				top:100%;
+				left:100%;
+				margin:-25rem 0 0 -33rem;
+			}
+			
+			.box--adam {
+				background-image:url(../assets/images/section-services-adam-30s.jpg);
+			}
+			
+			.box--anna {
+				background-image:url(../assets/images/section-services-anna-30s.jpg);
+			}
+			
+			.box--john {
+				background-image:url(../assets/images/section-services-john-30s.jpg);
+			}
+			
+			.box--jane {
+				background-image:url(../assets/images/section-services-jane-30s.jpg);
+			}
+			
+			.box--brad {
+				background-image:url(../assets/images/section-services-brad-30s.jpg);
+			}
+
+			@include responsive-small-desktop {
+				.box {
+					width:23rem;
+					height:23rem;
+					
+					.caption {
+						padding:2.5rem 8rem 1.5rem;
+					}
+					
+					.caption--long {
+						width:40rem;
+						margin-left:-20rem;
+						padding:3rem 11rem 2rem;
+					}
+				}
+				
+				.box--left {
+					width:40rem;
+					height:40rem;
+					margin-top:-20rem;
+				}
+				
+				.box--right {
+					margin-top:-11.5rem;
+				}
+				
+				.box--top {
+					top:4rem;
+				}
+				
+				.box--bottom {
+					margin-top:-27rem;
+				}
+			}
+		}
+	}
+	
+	@include responsive-mobile {
+		
+		&:after {
+			content:' ';
+			width:90rem;
+			height:90rem;
+			position:absolute;
+			top:-81rem;
+			left:50%;
+			margin-left:-27rem;
+			background:url(../img/backgrounds/section-profit-for-members-rectangle-empty.png) center center no-repeat transparent;
+			background-size:cover;
+			opacity:.2;
+		}
+	}
+}
+
+@include responsive-small-desktop-min {
+	
+	body.fixedscroll .wrap-sections .section--services .graphic {
+		opacity:0;
+		left:70%;
+		
+		.boxes {
+			
+			.box--top, .box--bottom {
+				margin-right:-20rem;
+			}
+			
+			.box--right {
+				margin-right:-50rem;
+			}
+		}
+	}
+	
+	body.fixedscroll.section-services-active .wrap-sections .section--services .graphic {
+		opacity:1;
+		left:50%;
+		
+		.boxes {
+			
+			.box--top, .box--bottom, .box--right {
+				margin-right:0;
+			}
+		}
+	}
+	
+}

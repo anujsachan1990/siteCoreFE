@@ -1,0 +1,43 @@
+{
+    "color": "green",
+    "heading":"Get active support",
+    "author" : "jim",
+    "headingData": "Considering Joining",
+    "place":"Nundah, Brisbane",
+    "text" :"<p>Don’t go it alone, our local team will help you with anything you need to do with your super.</p>",
+    "link":[{"href":"#","urlLabel":"Connect with comeone now about joining"},{"href":"#","urlLabel":"See our financial advice options"},{"href":"#","urlLabel":"Online access to your account 24/7"}],
+    "boxes" : [
+    {"positon":"bottom",
+    "author" : "adam",
+    "shortDiscription":"Claim your insurance",
+    "helptext":"can help with your",
+    "additionLabel":"claim",
+    "linkLabel":"insurance",
+    "url":"content.html"
+    },
+    {"positon":"left",
+    "author" : "anna",
+    "shortDiscription":"Combine your funds",
+    "helptext":"helps",
+    "additionLabel":"claim",
+    "linkLabel":"finding your funds",
+    "url":"content.html"
+    },
+    {"positon":"top",
+    "author" : "john",
+    "shortDiscription":"Financial advice",
+    "helptext":"can give",
+    "additionLabel":"claim",
+    "linkLabel":"financial advice",
+    "url":"content.html"
+    },
+    {"positon":"right",
+    "author" : "jane",
+    "shortDiscription":"Find lost super",
+    "helptext":"finds your",
+    "additionLabel":"claim",
+    "linkLabel":"lost super",
+    "url":"content.html"
+    }]
+
+}

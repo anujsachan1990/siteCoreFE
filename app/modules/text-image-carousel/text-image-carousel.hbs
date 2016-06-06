@@ -1,0 +1,37 @@
+<section id="services" class="section section--services section--background-{{this.color}} section--invert section--active" rel="services" data-background="{{this.color}}">
+     <div class="inner">
+        <div class="content">
+        {{#if this.heading}}
+            <h2 data-short-title="{{this.headingData}}">{{this.heading}}</h2>
+        {{/if}}
+         {{#if this.text}}
+            <div class="txt">
+                {{{this.text}}}
+            </div>
+         {{/if}}
+         {{#if this.textSmall}}
+            <div class="txt txt--small">
+                 {{{this.textSmall}}}
+            </div>
+         {{/if}}
+            
+            <ul class="links">
+            {{#each link}}
+                <li><a href="{{href}}" target="_self">{{urlLabel}}</a></li>
+            {{/each}}
+            </ul>
+            
+        </div>
+    </div>
+    
+    <div class="graphic">
+        <div class="boxes">
+        {{#each boxes}}
+            <div class="box box--{{author}} box--{{positon}} {{#if @first}} box--active{{/if}}">
+                <span class="caption caption--short">{{shortDiscription}}</span>
+                <span class="caption caption--long">{{author}} {{helptext}} <a href="content.html">{{linkLabel}}</a> {{additionLabel}}</span>
+            </div>
+        {{/each}}
+        </div>
+    </div>
+</section>
