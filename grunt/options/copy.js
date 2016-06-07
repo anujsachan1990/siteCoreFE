@@ -7,7 +7,7 @@ module.exports = {
             cwd: '<%= config.src_assets %>',
             dest: '<%= config.dist %>/assets',
             src: [
-                'images/**/*{jpg,png,ico}',
+                'images/**/*{jpg,png,ico,svg}',
                 'fonts/{,*/}*.*'
             ]
         }]
