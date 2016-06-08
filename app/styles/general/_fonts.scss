@@ -19,38 +19,38 @@ $ssHeading: 'Neo Sans';
 
 /* Import Museo Sans */
 
-@include font-face('Museo Sans', '../assets/fonts/MuseoSans_100.otf', 100, normal);
-@include font-face('Museo Sans', '../assets/fonts/MuseoSans_100_Italic.otf', 100, italic);
+@include font-face('Museo Sans', '../resources/fonts/MuseoSans_100.otf', 100, normal);
+@include font-face('Museo Sans', '../resources/fonts/MuseoSans_100_Italic.otf', 100, italic);
 
-@include font-face('Museo Sans', '../assets/fonts/MuseoSans_300.otf', 300, normal);
-@include font-face('Museo Sans', '../assets/fonts/MuseoSans_300_Italic.otf', 300, italic);
+@include font-face('Museo Sans', '../resources/fonts/MuseoSans_300.otf', 300, normal);
+@include font-face('Museo Sans', '../resources/fonts/MuseoSans_300_Italic.otf', 300, italic);
 
-@include font-face('Museo Sans', '../assets/fonts/MuseoSans_500.otf', 500, normal);
-@include font-face('Museo Sans', '../assets/fonts/MuseoSans_500_Italic.otf', 500, italic);
+@include font-face('Museo Sans', '../resources/fonts/MuseoSans_500.otf', 500, normal);
+@include font-face('Museo Sans', '../resources/fonts/MuseoSans_500_Italic.otf', 500, italic);
 
-@include font-face('Museo Sans', '../assets/fonts/MuseoSans_700.otf', 700, normal);
-@include font-face('Museo Sans', '../assets/fonts/MuseoSans_700_Italic.otf', 700, italic);
+@include font-face('Museo Sans', '../resources/fonts/MuseoSans_700.otf', 700, normal);
+@include font-face('Museo Sans', '../resources/fonts/MuseoSans_700_Italic.otf', 700, italic);
 
-@include font-face('Museo Sans', '../assets/fonts/MuseoSans_900.otf', 900, normal);
-@include font-face('Museo Sans', '../assets/fonts/MuseoSans_900_Italic.otf', 900, italic);
+@include font-face('Museo Sans', '../resources/fonts/MuseoSans_900.otf', 900, normal);
+@include font-face('Museo Sans', '../resources/fonts/MuseoSans_900_Italic.otf', 900, italic);
 
 
 /* Neo Sans */
 
-@include font-face('Neo Sans', '../assets/fonts/NeoSansStd-Light.otf', 100, normal);
-@include font-face('Neo Sans', '../assets/fonts/NeoSansStd-LightItalic.otf', 100, italic);
+@include font-face('Neo Sans', '../resources/fonts/NeoSansStd-Light.otf', 100, normal);
+@include font-face('Neo Sans', '../resources/fonts/NeoSansStd-LightItalic.otf', 100, italic);
 
-@include font-face('Neo Sans', '../assets/fonts/NeoSansStd-Regular.otf', 300, normal);
-@include font-face('Neo Sans', '../assets/fonts/NeoSansStd-RegularItalic.otf', 300, italic);
+@include font-face('Neo Sans', '../resources/fonts/NeoSansStd-Regular.otf', 300, normal);
+@include font-face('Neo Sans', '../resources/fonts/NeoSansStd-RegularItalic.otf', 300, italic);
 
-@include font-face('Neo Sans', '../assets/fonts/NeoSansStd-Medium.otf', 500, normal);
-@include font-face('Neo Sans', '../assets/fonts/NeoSansStd-MediumItalic.otf', 500, italic);
+@include font-face('Neo Sans', '../resources/fonts/NeoSansStd-Medium.otf', 500, normal);
+@include font-face('Neo Sans', '../resources/fonts/NeoSansStd-MediumItalic.otf', 500, italic);
 
-@include font-face('Neo Sans', '../assets/fonts/NeoSansStd-Bold.otf', 700, normal);
-@include font-face('Neo Sans', '../assets/fonts/NeoSansStd-BoldItalic.otf', 700, italic);
+@include font-face('Neo Sans', '../resources/fonts/NeoSansStd-Bold.otf', 700, normal);
+@include font-face('Neo Sans', '../resources/fonts/NeoSansStd-BoldItalic.otf', 700, italic);
 
-@include font-face('Neo Sans', '../assets/fonts/NeoSansStd-Ultra.otf', 900, normal);
-@include font-face('Neo Sans', '../assets/fonts/NeoSansStd-UltraItalic.otf', 900, italic);
+@include font-face('Neo Sans', '../resources/fonts/NeoSansStd-Ultra.otf', 900, normal);
+@include font-face('Neo Sans', '../resources/fonts/NeoSansStd-UltraItalic.otf', 900, italic);
 
 body.neosans * {
 	font-family:'Neo Sans' !important;

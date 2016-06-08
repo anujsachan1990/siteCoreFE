@@ -26,103 +26,103 @@
   font-family: "Museo Sans";
   font-style: normal;
   font-weight: 100;
-  src: url("../assets/fonts/MuseoSans_100.otf") format("opentype"); }
+  src: url("../resources/fonts/MuseoSans_100.otf") format("opentype"); }
 @font-face {
   font-family: "Museo Sans";
   font-style: italic;
   font-weight: 100;
-  src: url("../assets/fonts/MuseoSans_100_Italic.otf") format("opentype"); }
+  src: url("../resources/fonts/MuseoSans_100_Italic.otf") format("opentype"); }
 @font-face {
   font-family: "Museo Sans";
   font-style: normal;
   font-weight: 300;
-  src: url("../assets/fonts/MuseoSans_300.otf") format("opentype"); }
+  src: url("../resources/fonts/MuseoSans_300.otf") format("opentype"); }
 @font-face {
   font-family: "Museo Sans";
   font-style: italic;
   font-weight: 300;
-  src: url("../assets/fonts/MuseoSans_300_Italic.otf") format("opentype"); }
+  src: url("../resources/fonts/MuseoSans_300_Italic.otf") format("opentype"); }
 @font-face {
   font-family: "Museo Sans";
   font-style: normal;
   font-weight: 500;
-  src: url("../assets/fonts/MuseoSans_500.otf") format("opentype"); }
+  src: url("../resources/fonts/MuseoSans_500.otf") format("opentype"); }
 @font-face {
   font-family: "Museo Sans";
   font-style: italic;
   font-weight: 500;
-  src: url("../assets/fonts/MuseoSans_500_Italic.otf") format("opentype"); }
+  src: url("../resources/fonts/MuseoSans_500_Italic.otf") format("opentype"); }
 @font-face {
   font-family: "Museo Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../assets/fonts/MuseoSans_700.otf") format("opentype"); }
+  src: url("../resources/fonts/MuseoSans_700.otf") format("opentype"); }
 @font-face {
   font-family: "Museo Sans";
   font-style: italic;
   font-weight: 700;
-  src: url("../assets/fonts/MuseoSans_700_Italic.otf") format("opentype"); }
+  src: url("../resources/fonts/MuseoSans_700_Italic.otf") format("opentype"); }
 @font-face {
   font-family: "Museo Sans";
   font-style: normal;
   font-weight: 900;
-  src: url("../assets/fonts/MuseoSans_900.otf") format("opentype"); }
+  src: url("../resources/fonts/MuseoSans_900.otf") format("opentype"); }
 @font-face {
   font-family: "Museo Sans";
   font-style: italic;
   font-weight: 900;
-  src: url("../assets/fonts/MuseoSans_900_Italic.otf") format("opentype"); }
+  src: url("../resources/fonts/MuseoSans_900_Italic.otf") format("opentype"); }
 /* Neo Sans */
 @font-face {
   font-family: "Neo Sans";
   font-style: normal;
   font-weight: 100;
-  src: url("../assets/fonts/NeoSansStd-Light.otf") format("opentype"); }
+  src: url("../resources/fonts/NeoSansStd-Light.otf") format("opentype"); }
 @font-face {
   font-family: "Neo Sans";
   font-style: italic;
   font-weight: 100;
-  src: url("../assets/fonts/NeoSansStd-LightItalic.otf") format("opentype"); }
+  src: url("../resources/fonts/NeoSansStd-LightItalic.otf") format("opentype"); }
 @font-face {
   font-family: "Neo Sans";
   font-style: normal;
   font-weight: 300;
-  src: url("../assets/fonts/NeoSansStd-Regular.otf") format("opentype"); }
+  src: url("../resources/fonts/NeoSansStd-Regular.otf") format("opentype"); }
 @font-face {
   font-family: "Neo Sans";
   font-style: italic;
   font-weight: 300;
-  src: url("../assets/fonts/NeoSansStd-RegularItalic.otf") format("opentype"); }
+  src: url("../resources/fonts/NeoSansStd-RegularItalic.otf") format("opentype"); }
 @font-face {
   font-family: "Neo Sans";
   font-style: normal;
   font-weight: 500;
-  src: url("../assets/fonts/NeoSansStd-Medium.otf") format("opentype"); }
+  src: url("../resources/fonts/NeoSansStd-Medium.otf") format("opentype"); }
 @font-face {
   font-family: "Neo Sans";
   font-style: italic;
   font-weight: 500;
-  src: url("../assets/fonts/NeoSansStd-MediumItalic.otf") format("opentype"); }
+  src: url("../resources/fonts/NeoSansStd-MediumItalic.otf") format("opentype"); }
 @font-face {
   font-family: "Neo Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../assets/fonts/NeoSansStd-Bold.otf") format("opentype"); }
+  src: url("../resources/fonts/NeoSansStd-Bold.otf") format("opentype"); }
 @font-face {
   font-family: "Neo Sans";
   font-style: italic;
   font-weight: 700;
-  src: url("../assets/fonts/NeoSansStd-BoldItalic.otf") format("opentype"); }
+  src: url("../resources/fonts/NeoSansStd-BoldItalic.otf") format("opentype"); }
 @font-face {
   font-family: "Neo Sans";
   font-style: normal;
   font-weight: 900;
-  src: url("../assets/fonts/NeoSansStd-Ultra.otf") format("opentype"); }
+  src: url("../resources/fonts/NeoSansStd-Ultra.otf") format("opentype"); }
 @font-face {
   font-family: "Neo Sans";
   font-style: italic;
   font-weight: 900;
-  src: url("../assets/fonts/NeoSansStd-UltraItalic.otf") format("opentype"); }
+  src: url("../resources/fonts/NeoSansStd-UltraItalic.otf") format("opentype"); }
 body.neosans * {
   font-family: 'Neo Sans' !important; }
 
@@ -271,7 +271,7 @@ h1, h2, h3, b {
     height: 3.6rem;
     width: 3.6rem;
     border-radius: 3.6rem;
-    background: url(../assets/images/svg/arrow-right-white.svg) center center no-repeat #faa61a;
+    background: url(../resources/images/svg/arrow-right-white.svg) center center no-repeat #faa61a;
     background-size: 2rem 2rem;
     transition: all .4s; }
   .btn--cta:hover {
@@ -394,7 +394,7 @@ h1, h2, h3, b {
     .wrap-sections section.section--invert .links li a {
       color: #fff; }
       .wrap-sections section.section--invert .links li a:after {
-        background-image: url(../assets/images/svg/arrow-right-white.svg); }
+        background-image: url(../resources/images/svg/arrow-right-white.svg); }
   .wrap-sections section.section--background-blue {
     background-color: #007bba; }
   .wrap-sections section.section--background-purple {
@@ -1403,7 +1403,7 @@ body.fixedscroll .wrap-sections section.section--active.section--background-imag
   .wrap-sections .section--cta .content .txt--callus .links li a {
     color: #faa61a; }
     .wrap-sections .section--cta .content .txt--callus .links li a:after {
-      background-image: url(../assets/images/svg/arrow-right-orange.svg); }
+      background-image: url(../resources/images/svg/arrow-right-orange.svg); }
   .wrap-sections .section--cta .content .txt--emailme p {
     margin: 1rem;
     padding: 0; }
@@ -1427,7 +1427,7 @@ body.fixedscroll .wrap-sections section.section--active.section--background-imag
       height: 3.6rem;
       width: 3.6rem;
       border-radius: 3.6rem;
-      background: url(../assets/images/svg/arrow-right-white.svg) center center no-repeat #faa61a;
+      background: url(../resources/images/svg/arrow-right-white.svg) center center no-repeat #faa61a;
       background-size: 2rem 2rem;
       transition: all .4s; }
       .wrap-sections .section--cta .content .txt--emailme form button:hover {
@@ -1464,7 +1464,7 @@ body.home .wrap-sections .section--more {
         color: #faa61a;
         margin: .7rem 0;
         padding: 0 0 0 3rem;
-        background: url(../assets/images/svg/arrow-right-orange.svg) left 0.2rem no-repeat transparent;
+        background: url(../resources/images/svg/arrow-right-orange.svg) left 0.2rem no-repeat transparent;
         background-size: 2.4rem 2.4rem;
         cursor: pointer;
         display: inline-block;
@@ -1528,19 +1528,19 @@ body.home .wrap-sections .section--more {
       top: 0;
       left: 0;
       			/*.box--adam {
-      				background-image:url(../assets/images/section-services-adam-30s.jpg);
+      				background-image:url(../resources/images/section-services-adam-30s.jpg);
       			}
       			
       			.box--anna {
-      				background-image:url(../assets/images/section-services-anna-30s.jpg);
+      				background-image:url(../resources/images/section-services-anna-30s.jpg);
       			}
       			
       			.box--john {
-      				background-image:url(../assets/images/section-services-john-30s.jpg);
+      				background-image:url(../resources/images/section-services-john-30s.jpg);
       			}
       			
       			.box--jane {
-      				background-image:url(../assets/images/section-services-jane-30s.jpg);
+      				background-image:url(../resources/images/section-services-jane-30s.jpg);
       			}
       */ }
       .wrap-sections .section--services .graphic .boxes .box {
@@ -1612,7 +1612,7 @@ body.home .wrap-sections .section--more {
         left: 100%;
         margin: -25rem 0 0 -33rem; }
       .wrap-sections .section--services .graphic .boxes .box--brad {
-        background-image: url(../assets/images/section-services-brad-30s.jpg); }
+        background-image: url(../resources/images/section-services-brad-30s.jpg); }
       @media only screen and (max-width: 1400px) {
         .wrap-sections .section--services .graphic .boxes .box {
           width: 23rem;

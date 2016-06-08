@@ -24,7 +24,7 @@
         "linkLabel": "insurance",
         "url": "content.html",
         "image": {
-            "fileRefernce": "../assets/images/section-services-adam-30s.jpg",
+            "fileRefernce": "../resources/images/section-services-adam-30s.jpg",
             "alt": "adam",
             "title": "adam"
         }
@@ -37,7 +37,7 @@
         "linkLabel": "finding your funds",
         "url": "content.html",
         "image": {
-            "fileRefernce": "../assets/images/section-services-anna-30s.jpg",
+            "fileRefernce": "../resources/images/section-services-anna-30s.jpg",
             "alt": "anna",
             "title": "anna"
         }
@@ -50,7 +50,7 @@
         "linkLabel": "financial advice",
         "url": "content.html",
         "image": {
-            "fileRefernce": "../assets/images/section-services-john-30s.jpg",
+            "fileRefernce": "../resources/images/section-services-john-30s.jpg",
             "alt": "john",
             "title": "john"
         }
@@ -63,7 +63,7 @@
         "linkLabel": "lost super",
         "url": "content.html",
         "image": {
-            "fileRefernce": "../assets/images/section-services-jane-30s.jpg",
+            "fileRefernce": "../resources/images/section-services-jane-30s.jpg",
             "alt": "jane",
             "title": "jane"
         }
