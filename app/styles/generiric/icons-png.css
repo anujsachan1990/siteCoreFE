@@ -6,3 +6,5 @@
 
 .icon-arrow { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAABLCAYAAADpqX6aAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAARxJREFUaIHt2E8qhVEYx/HPZWIgO6DMWYGRHRjcbMIeTMyVMpIuSrENjMxMRLECGZI/pWugm+RNt1fd95z6feuZfwbPeQan57sFbGAFM7jGPi4U1hqeMWyYHUx1R/vZEl41Q0czUAj4xN/QosAPxsMWAX5vQBULvhkDWAx4swW2M/Csr5taDXge9y3BB5gOOOCAAw64M/BhwAEHHHDAnYKPAg444IAD7hQ8QK8m8PqksbQHn3eBpR34iQJ+skuu7Rqc1QIdol8LdM8ET9d/b+zE3lWggQYaaKCBBhpooIEGGmiggQb6qznc1gCFrVqgcFcLFD5qgcLjGMAioHDagCoSCst4UwF0VB8vmqG7CoKOWsQ2LnGFY6x2Kqq5T5X/2nIiYk+4AAAAAElFTkSuQmCC'); background-repeat: no-repeat; }
 
+.icon-call { background-image: url('png/call.png'); background-repeat: no-repeat; }
+

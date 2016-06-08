@@ -18,9 +18,17 @@ this["HBS"]["templates"]["actionCapture"] = Handlebars.template({"1":function(de
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.audienceComponent : depth0)) != null ? stack1.callUslabel : stack1), depth0))
     + "</h3>\n                <p>"
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.audienceComponent : depth0)) != null ? stack1.callUsDescription : stack1), depth0))
-    + "</p>\n                <p class=\"phonenumber\">\n                    <svg role=\"img\" class=\"icon icon--call\">\n                        <use xlink:href=\"#icn-call\"></use>\n                    </svg>"
+    + "</p>\n                <p class=\"phonenumber\">\n                <img src=\""
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.callIcon : depth0)) != null ? stack1.filerefernce : stack1), depth0))
+    + "\" alt=\""
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.callIcon : depth0)) != null ? stack1.alt : stack1), depth0))
+    + "\" title=\""
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.callIcon : depth0)) != null ? stack1.title : stack1), depth0))
+    + "\"/> \n                <a href=\"tel:"
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.audienceComponent : depth0)) != null ? stack1.phoneNumberLink : stack1), depth0))
+    + "\">\n                    \n                    "
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.audienceComponent : depth0)) != null ? stack1.phoneNumber : stack1), depth0))
-    + "</p>\n                <ul class=\"links\">\n                    <li><a href=\"#\">"
+    + "</a>\n                    </p>\n                <ul class=\"links\">\n                    <li><a href=\"#\">"
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.audienceComponent : depth0)) != null ? stack1.requestCallLink : stack1), depth0))
     + "</a>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"txt txt--emailme\">\n                <p>"
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.audienceComponent : depth0)) != null ? stack1.emailSummary : stack1), depth0))
