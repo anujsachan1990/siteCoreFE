@@ -19,10 +19,9 @@
                 <h3>{{audienceComponent.callUslabel}}</h3>
                 <p>{{audienceComponent.callUsDescription}}</p>
                 <p class="phonenumber">
+                <img src="{{callIcon.filerefernce}}" alt="{{callIcon.alt}}" title="{{callIcon.title}}"/> 
                 <a href="tel:{{audienceComponent.phoneNumberLink}}">
-                    <svg role="img" class="icon icon--call">
-                        <use xlink:href="#icn-call"></use>
-                    </svg>
+                    
                     {{audienceComponent.phoneNumber}}</a>
                     </p>
                 <ul class="links">
