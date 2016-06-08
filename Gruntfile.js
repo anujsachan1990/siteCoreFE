@@ -13,10 +13,10 @@ module.exports = function(grunt) {
         config = {
             src: 'app',
             src_bowersrc_bower: 'app/js/bower',
-            src_assets: 'app/assets',
+            src_assets: 'app/resources',
             src_modules: 'app/modules',
             dist: 'dist',
-            dist_assets: 'dist/assets',
+            dist_assets: 'dist/resources',
             delivery: 'delivery',
             tmp: '.tmp',
             test: 'test',
