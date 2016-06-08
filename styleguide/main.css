@@ -1398,6 +1398,9 @@ body.fixedscroll .wrap-sections section.section--active.section--background-imag
       margin: 0 .4rem 0 0; }
       .wrap-sections .section--cta .content .txt--callus .phonenumber svg path, .wrap-sections .section--cta .content .txt--callus .phonenumber svg use {
         fill: #fff; }
+    .wrap-sections .section--cta .content .txt--callus .phonenumber a {
+      color: #fff;
+      text-decoration: none; }
   .wrap-sections .section--cta .content .txt--callus .links li a {
     color: #faa61a; }
     .wrap-sections .section--cta .content .txt--callus .links li a:after {

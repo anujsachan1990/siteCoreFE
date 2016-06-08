@@ -3,6 +3,7 @@
         "callUslabel": "Or call us!",
         "callUsDescription": "We're here to help",
         "phoneNumber": "13 11 84",
+        "phoneNumberLink":"131184",
         "requestCallLink": "Request a call back",
         "emailSummary": "Want to be emailed a summary?",
         "placeholder" :"Enter your email address..."
