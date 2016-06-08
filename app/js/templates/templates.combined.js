@@ -99,14 +99,20 @@ this["HBS"]["templates"]["text-image-carousel"] = Handlebars.template({"1":funct
     + escapeExpression(((helper = (helper = helpers.urlLabel || (depth0 != null ? depth0.urlLabel : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"urlLabel","hash":{},"data":data}) : helper)))
     + "</a></li>\n";
 },"9":function(depth0,helpers,partials,data) {
-  var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, buffer = "            <div class=\"box box--"
+  var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, lambda=this.lambda, buffer = "            <div class=\"box box--"
     + escapeExpression(((helper = (helper = helpers.author || (depth0 != null ? depth0.author : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"author","hash":{},"data":data}) : helper)))
     + " box--"
     + escapeExpression(((helper = (helper = helpers.positon || (depth0 != null ? depth0.positon : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"positon","hash":{},"data":data}) : helper)))
     + " ";
   stack1 = helpers['if'].call(depth0, (data && data.first), {"name":"if","hash":{},"fn":this.program(10, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
-  return buffer + "\">\n                <span class=\"caption caption--short\">"
+  return buffer + "\">\n            <img class=\"author--image\" src=\""
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.image : depth0)) != null ? stack1.fileRefernce : stack1), depth0))
+    + "\" alt=\""
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.image : depth0)) != null ? stack1.alt : stack1), depth0))
+    + "\" title=\""
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.image : depth0)) != null ? stack1.title : stack1), depth0))
+    + "\"/>\n                <span class=\"caption caption--short\">"
     + escapeExpression(((helper = (helper = helpers.shortDiscription || (depth0 != null ? depth0.shortDiscription : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"shortDiscription","hash":{},"data":data}) : helper)))
     + "</span>\n                <span class=\"caption caption--long\">"
     + escapeExpression(((helper = (helper = helpers.author || (depth0 != null ? depth0.author : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"author","hash":{},"data":data}) : helper)))
@@ -134,7 +140,7 @@ this["HBS"]["templates"]["text-image-carousel"] = Handlebars.template({"1":funct
   buffer += "            <ul class=\"links\">\n";
   stack1 = helpers.each.call(depth0, (depth0 != null ? depth0.link : depth0), {"name":"each","hash":{},"fn":this.program(7, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
-  buffer += "            </ul>\n        </div>\n    </div>\n\n    <div class=\"graphic\">\n        <div class=\"boxes\">\n";
+  buffer += "            </ul>\n        </div>\n    </div> \n    <div class=\"graphic\">\n        <div class=\"boxes\">\n";
   stack1 = helpers.each.call(depth0, (depth0 != null ? depth0.boxes : depth0), {"name":"each","hash":{},"fn":this.program(9, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
   return buffer + "        </div>\n    </div>\n</section>\n";

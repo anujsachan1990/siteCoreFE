@@ -20,12 +20,12 @@
             {{/each}}
             </ul>
         </div>
-    </div>
-
+    </div> 
     <div class="graphic">
         <div class="boxes">
         {{#each boxes}}
             <div class="box box--{{author}} box--{{positon}} {{#if @first}} box--active{{/if}}">
+            <img class="author--image" src="{{image.fileRefernce}}" alt="{{image.alt}}" title="{{image.title}}"/>
                 <span class="caption caption--short">{{shortDiscription}}</span>
                 <span class="caption caption--long">{{author}} {{helptext}} <a href="content.html">{{linkLabel}}</a> {{additionLabel}}</span>
             </div>

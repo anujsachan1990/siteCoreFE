@@ -1521,7 +1521,23 @@ body.home .wrap-sections .section--more {
       height: 100%;
       position: absolute;
       top: 0;
-      left: 0; }
+      left: 0;
+      			/*.box--adam {
+      				background-image:url(../assets/images/section-services-adam-30s.jpg);
+      			}
+      			
+      			.box--anna {
+      				background-image:url(../assets/images/section-services-anna-30s.jpg);
+      			}
+      			
+      			.box--john {
+      				background-image:url(../assets/images/section-services-john-30s.jpg);
+      			}
+      			
+      			.box--jane {
+      				background-image:url(../assets/images/section-services-jane-30s.jpg);
+      			}
+      */ }
       .wrap-sections .section--services .graphic .boxes .box {
         width: 26rem;
         height: 26rem;
@@ -1565,6 +1581,8 @@ body.home .wrap-sections .section--more {
           width: 44rem;
           left: 50%;
           margin-left: -22rem; }
+        .wrap-sections .section--services .graphic .boxes .box .author--image {
+          max-width: 100%; }
       .wrap-sections .section--services .graphic .boxes .box--top {
         left: 100%;
         top: -2rem;
@@ -1588,14 +1606,6 @@ body.home .wrap-sections .section--more {
         top: 100%;
         left: 100%;
         margin: -25rem 0 0 -33rem; }
-      .wrap-sections .section--services .graphic .boxes .box--adam {
-        background-image: url(../assets/images/section-services-adam-30s.jpg); }
-      .wrap-sections .section--services .graphic .boxes .box--anna {
-        background-image: url(../assets/images/section-services-anna-30s.jpg); }
-      .wrap-sections .section--services .graphic .boxes .box--john {
-        background-image: url(../assets/images/section-services-john-30s.jpg); }
-      .wrap-sections .section--services .graphic .boxes .box--jane {
-        background-image: url(../assets/images/section-services-jane-30s.jpg); }
       .wrap-sections .section--services .graphic .boxes .box--brad {
         background-image: url(../assets/images/section-services-brad-30s.jpg); }
       @media only screen and (max-width: 1400px) {

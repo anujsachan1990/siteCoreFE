@@ -1,43 +1,72 @@
 {
     "color": "green",
-    "heading":"Get active support",
-    "author" : "jim",
+    "heading": "Get active support",
+    "author": "jim",
     "headingData": "Considering Joining",
-    "place":"Nundah, Brisbane",
-    "text" :"<p>Don’t go it alone, our local team will help you with anything you need to do with your super.</p>",
-    "link":[{"href":"#","urlLabel":"Connect with comeone now about joining"},{"href":"#","urlLabel":"See our financial advice options"},{"href":"#","urlLabel":"Online access to your account 24/7"}],
-    "boxes" : [
-    {"positon":"bottom",
-    "author" : "adam",
-    "shortDiscription":"Claim your insurance",
-    "helptext":"can help with your",
-    "additionLabel":"claim",
-    "linkLabel":"insurance",
-    "url":"content.html"
-    },
-    {"positon":"left",
-    "author" : "anna",
-    "shortDiscription":"Combine your funds",
-    "helptext":"helps",
-    "additionLabel":"claim",
-    "linkLabel":"finding your funds",
-    "url":"content.html"
-    },
-    {"positon":"top",
-    "author" : "john",
-    "shortDiscription":"Financial advice",
-    "helptext":"can give",
-    "additionLabel":"claim",
-    "linkLabel":"financial advice",
-    "url":"content.html"
-    },
-    {"positon":"right",
-    "author" : "jane",
-    "shortDiscription":"Find lost super",
-    "helptext":"finds your",
-    "additionLabel":"claim",
-    "linkLabel":"lost super",
-    "url":"content.html"
+    "place": "Nundah, Brisbane",
+    "text": "<p>Don’t go it alone, our local team will help you with anything you need to do with your super.</p>",
+    "link": [{
+        "href": "#",
+        "urlLabel": "Connect with comeone now about joining"
+    }, {
+        "href": "#",
+        "urlLabel": "See our financial advice options"
+    }, {
+        "href": "#",
+        "urlLabel": "Online access to your account 24/7"
+    }],
+    "boxes": [{
+        "positon": "bottom",
+        "author": "adam",
+        "shortDiscription": "Claim your insurance",
+        "helptext": "can help with your",
+        "additionLabel": "claim",
+        "linkLabel": "insurance",
+        "url": "content.html",
+        "image": {
+            "fileRefernce": "../assets/images/section-services-adam-30s.jpg",
+            "alt": "adam",
+            "title": "adam"
+        }
+    }, {
+        "positon": "left",
+        "author": "anna",
+        "shortDiscription": "Combine your funds",
+        "helptext": "helps",
+        "additionLabel": "claim",
+        "linkLabel": "finding your funds",
+        "url": "content.html",
+        "image": {
+            "fileRefernce": "../assets/images/section-services-anna-30s.jpg",
+            "alt": "anna",
+            "title": "anna"
+        }
+    }, {
+        "positon": "top",
+        "author": "john",
+        "shortDiscription": "Financial advice",
+        "helptext": "can give",
+        "additionLabel": "claim",
+        "linkLabel": "financial advice",
+        "url": "content.html",
+        "image": {
+            "fileRefernce": "../assets/images/section-services-john-30s.jpg",
+            "alt": "john",
+            "title": "john"
+        }
+    }, {
+        "positon": "right",
+        "author": "jane",
+        "shortDiscription": "Find lost super",
+        "helptext": "finds your",
+        "additionLabel": "claim",
+        "linkLabel": "lost super",
+        "url": "content.html",
+        "image": {
+            "fileRefernce": "../assets/images/section-services-jane-30s.jpg",
+            "alt": "jane",
+            "title": "jane"
+        }
     }]
 
 }
