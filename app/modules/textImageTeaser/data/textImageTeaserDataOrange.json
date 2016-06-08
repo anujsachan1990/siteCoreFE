@@ -1,7 +1,7 @@
 {
     "color": "orange",
     "heading":"Advisers",
-    "imgPath": "assets/images/section-adviser-mark.jpg",
+    "imgPath": "resources/images/section-adviser-mark.jpg",
     "author" : "Mark",
     "place":"Clayfield, Brisbane",
     "text" :"<p>Partner with a super fund that is <b>adviser friendly</b> and easy to deal with, plus has a winning combination of <b>low-cost, high value super solutions</b> and <b>dedicated support</b>.</p>",

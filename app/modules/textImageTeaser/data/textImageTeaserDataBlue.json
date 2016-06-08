@@ -1,7 +1,7 @@
 {
     "color": "blue",
     "heading":"Members",
-    "imgPath": "assets/images/section-member-jim.jpg",
+    "imgPath": "resources/images/section-member-jim.jpg",
     "author" : "jim",
     "place":"Nundah, Brisbane",
     "text" :" <p>When you <b>join Sunsuper</b>, you get access to one of <b>Australia's largest and most awarded super funds</b>.</p>",
