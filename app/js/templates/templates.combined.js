@@ -6,9 +6,9 @@ this["HBS"]["templates"]["actionCapture"] = Handlebars.template({"1":function(de
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.actionComponent : depth0)) != null ? stack1.heading : stack1), depth0))
     + "</h2>\n            <div class=\"txt\">\n                <p>"
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.actionComponent : depth0)) != null ? stack1.description : stack1), depth0))
-    + "</p>\n                <button class=\"btn btn--cta btn--join\" data-short-text=\"Join\">"
+    + "</p>\n                <a href=\"#\" class=\"btn btn--cta btn--join\" data-short-text=\"Join\">"
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.actionComponent : depth0)) != null ? stack1.joinLabel : stack1), depth0))
-    + "</button>\n            </div>\n        </div>\n        \n";
+    + "</a>\n            </div>\n        </div>\n        \n";
   stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.audienceComponent : depth0), {"name":"if","hash":{},"fn":this.program(2, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
   return buffer + "        </div>\n\n    </div>\n</section>\n <!-- action components Ends here -->\n";

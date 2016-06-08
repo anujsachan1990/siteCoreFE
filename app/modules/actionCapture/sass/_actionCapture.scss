@@ -32,6 +32,11 @@
       width:33.6rem;
       color:$white;
     }
+
+    a.btn--cta {
+      display: inline-block;
+      text-decoration: none;
+    }
     
     .txt--callus, .txt--emailme {
       margin:6rem 0 0;
