@@ -1385,8 +1385,6 @@ body.fixedscroll .wrap-sections section.section--active.section--background-imag
   .wrap-sections .section--cta .content a.btn--cta {
     display: inline-block;
     text-decoration: none; }
-    .wrap-sections .section--cta .content a.btn--cta:hover {
-      text-decoration: underline; }
   .wrap-sections .section--cta .content .txt--callus, .wrap-sections .section--cta .content .txt--emailme {
     margin: 6rem 0 0; }
   .wrap-sections .section--cta .content .txt--callus h3, .wrap-sections .section--cta .content .txt--callus p {

@@ -5,7 +5,7 @@ module.exports = {
             expand: true,
             dot: true,
             cwd: '<%= config.src_assets %>',
-            dest: '<%= config.dist %>/assets',
+            dest: '<%= config.dist %>/resources',
             src: [
                 'images/**/*{jpg,png,ico,svg}',
                 'fonts/{,*/}*.*'
@@ -20,8 +20,8 @@ module.exports = {
             cwd: '<%= config.src_modules %>',
             dest: '<%= config.src_assets %>/images',
             src: [
-                '**/assets/**/*.jpg',
-                '**/assets/**/*.png'
+                '**/resources/**/*.jpg',
+                '**/resources/**/*.png'
             ]
         }]
     },
@@ -33,7 +33,7 @@ module.exports = {
             cwd: '<%= config.src_modules %>',
             dest: '<%= config.src_assets %>/images/svg',
             src: [
-                '**/assets/**/*.svg'
+                '**/resources/**/*.svg'
             ]
         }]
     },
