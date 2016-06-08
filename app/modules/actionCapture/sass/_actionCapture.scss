@@ -36,6 +36,9 @@
     a.btn--cta {
       display: inline-block;
       text-decoration: none;
+      &:hover{
+        text-decoration:underline;
+      }
     }
     
     .txt--callus, .txt--emailme {
